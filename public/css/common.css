@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+body {
+  background-color: #F5F6F7;
+  font-family: 'Roboto', sans-serif;
+  padding-top:170px;
+}
+
+#loginForm {
+  margin:0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+#loginForm * {
+  margin-bottom:5px;
+}
+
+#loginForm form input {
+  padding:15px;
+  font-size:12pt;
+}
+
+#logoImg {
+  width:270px;
+  margin-bottom:40px;
+}
+
+#loginMent {
+  text-align: left;
+  font-size:11pt;
+}
+
+#btnLogin {
+  width:100%;
+  padding:20px;
+  font-size:15pt;
+  font-weight: 100;
+}
+
+#join {
+  text-align:right;
+}
+
+#join a {
+  font-size:11pt;
+  color:#999;
+}
+
+#join a:hover {
+  color:#777;
+}
