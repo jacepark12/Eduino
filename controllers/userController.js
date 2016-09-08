@@ -1,62 +1,71 @@
-var model = require('../models/userModel.js');
-var jwt = require('jsonwebtoken');
 var sha256 = require('sha256');
+var validator = require("email-validator");
+
+var model = require('../models/userModel.js');
+
 
 module.exports = {
 
   all: function(req, res) {
-    model.find({}, function(err, user) {
-      res.status(200);
-      res.send(user);
-    });
+    console.log(model.model);
   },
 
-  get: function(req, res, jsonData) {
-    model.findOne(jsonData, function(err, user){
+  signin: function(req, res) {
+    var email = req.body.email;
+    var password = sha256(req.body.password);
+
+    var userData = {
+      'email': email,
+      'password': password
+    };
+
+    model.findOne(userData, function(err, user) {
 
       if (user) {
-        res.send(user);
+
+        req.session.email = email;
+        res.send("<script> location.href = '" + req.body.url + "' </script>");
+
       } else {
-        res.status(404);
-        res.send();
+        res.send("<script> alert('이메일 혹은 비밀번호를 다시 확인해주세요.'); history.back(); </script>");
       }
 
     });
+
   },
 
-  join: function(req, res, jsonData) {
-    model.findOne({ 'email': jsonData.email}, function(err, user) {
-      if (user) {
-        res.status(400);
-      } else {
-        var user = new model(jsonData);
+  signup: function(req, res) {
 
-        user.save(function (err, user) {
-          res.send(user);
-        });
+    var email = req.body.email,
+        password = req.body.password,
+        passwordRepeat = req.body.passwordrepeat,
+        nickname = req.body.nickname;
+
+    if (validator.validate(email) && (password == passwordRepeat) && nickname != '' ) {
+
+      var userData = {
+        email: req.body.email,
+        password: sha256(req.body.password),
+        nickname: req.body.nickname,
+        profile_image: ''
       }
-    });
-  },
 
-  auth: function(req, res, email, password) {
+      model.findOne({ 'email': req.body.email }, function(err, user) {
+        if (user) {
+          res.send("<script> alert('이미 가입된 이메일입니다. 다시 확인해주세요.'); history.back(); </script>");
+        } else {
+          var user = new model(userData);
 
-    model.findOne({ 'email': email}, function(err, user) {
+          user.save(function (err, user) {
+            //res.send(user);
+            res.send("<script> alert('가입되었습니다.'); location.href='http://kactale.com'; </script>")
+          });
+        }
+      });
 
-      var shaPassword = sha256(password);
-
-      if (user && user.password == shaPassword) {
-
-        var options = { expiresIn: "1 days" }; //TOKEN 생존 주기 1일
-        var payload = { 'email': email };
-
-        var token = jwt.sign(payload, SECRET_KEY);
-
-        res.send(token);
-
-      } else {
-        res.send(401);
-      }
-    });
+    } else {
+      res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
+    }
   }
 
 }
