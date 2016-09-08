@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/semantic.min.css">
+    <link rel="stylesheet" href="./css/icon.min.css">
+    <link rel="stylesheet" href="./css/custom.semantic.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <script src="./js/semantic.min.js"> </script>
+    <script src="./js/common.js"> </script>
+  </head>
+
+  <body>
+
+    <section id="loginForm">
+      <img id="logoImg" src="./img/KACTALE_Colored_Dongwoo.png">
+
+      <form action="./signin" method="POST">
+        <div id="inputID" class="ui fluid input">
+          <input name="email" type="email" placeholder="KACTALE ID">
+        </div>
+        <div id="inputPW" class="ui fluid input">
+          <input name="password" type="password" placeholder="KACTALE PW">
+        </div>
+        <button id="btnLogin" type="submit" class="ui red button">
+          Login
+        </button>
+      </form>
+
+      <div id="join"> <a href="./signup?step=terms"> 계정이 없다면? </a> </div>
+
+    </section>
+
+  </body>
+</html>
