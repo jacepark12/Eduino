@@ -8,9 +8,11 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-var controller = require('./controllers/userController.js');
+var userController = require('./controllers/userController.js'); // 이 프로젝트는 라우터를 따로 안쓰니까 복잡한듯하다...
+//var projectController = require('./controllers/projectController.js')
 
-mongoose.connect('mongodb://localhost/kactale');
+
+mongoose.connect('mongodb://localhost/eduino');
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -18,10 +20,8 @@ db.once('open', function (callback) {
   console.log('DB가 열렸습니다.');
 });
 
-SECRET_KEY = "7KGw64";
-/*
-  조동현짱짱맨.base64() == 7KGw64+Z7ZiE7Kex7Kex66eo;
-*/
+SECRET_KEY = ""; //이거 아마 세션에서 사용하는 키인듯
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
@@ -48,6 +48,7 @@ app.get("/", function(req, res){
 
 });
 
+//이부분 뭔 기능인지 잘 모르겠다_동우
 app.get("/signup", function(req, res){
   if (req.param('step') == 'terms') {
     res.sendfile('./public/signup.html');
@@ -71,5 +72,5 @@ app.post("/signup", function(req, res){
 });
 
 var server = app.listen(3005, function() {
-  console.log("Kactale Account Web Server");
+  console.log("Eduino Web Server");
 });
