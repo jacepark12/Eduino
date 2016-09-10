@@ -20,7 +20,7 @@ db.once('open', function (callback) {
   console.log('DB가 열렸습니다.');
 });
 
-SECRET_KEY = ""; //이거 아마 세션에서 사용하는 키인듯
+SECRET_KEY = "asdfgh"; //이거 아마 세션에서 사용하는 키인듯
 
 
 app.use(bodyParser.json());
