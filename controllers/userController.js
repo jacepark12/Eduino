@@ -67,6 +67,13 @@ module.exports = {
     } else {
       res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
     }
+  },
+
+  logout: function(req, res){
+
+    req.session.destroy();
+    res.clearCookie('sid');
+    res.send("<script> location.href='http://localhost:3005' </script>")
   }
 
 }
