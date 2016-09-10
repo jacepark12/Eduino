@@ -1,5 +1,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
+var path = require('path');
 var app = express();
 
 var ejs = require('ejs');
@@ -12,7 +13,7 @@ var bodyParser = require('body-parser');
 //var projectController = require('./controllers/projectController.js')
 var users = require('./routers/user.js');
 
-mongoose.connect('mongodb://localhost/eduino');
+mongoose.connect('mongodb://serverone1741.cloudapp.net:27017/eduino');
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -36,7 +37,12 @@ app.use(session({
 
 app.set('view engine', 'ejs');
 
-app.use(express.static("public"));
+console.log('__dirname : ');
+app.use(express.static(__dirname + '/public'));
+app.use("/css",  express.static(__dirname + '/public/css'));
+app.use("/js", express.static(__dirname + '/public/js'));
+app.use("/img",  express.static(__dirname + '/public/js'));
+
 app.use('/user',users);
 
 var server = app.listen(3005, function() {
