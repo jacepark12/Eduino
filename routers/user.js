@@ -34,7 +34,7 @@ user.get("/session", function(req, res){
 });
 
 user.get("/signin", function(req, res){
-  res.sendFile('../public/signin.html');
+  res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
 });
 
 user.post("/signin", function(req, res){
