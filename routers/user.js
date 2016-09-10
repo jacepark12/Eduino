@@ -3,7 +3,6 @@ var user = express.Router();
 var controller = require('../controllers/userController.js');
 var bodyParser = require('body-parser');
 //var sha256
-app.use(express.static("../public"));
 
 user.get("/", function(req, res){
 
@@ -37,3 +36,5 @@ user.post("/signin", function(req, res){
 user.post("/signup", function(req, res){
   controller.signup(req, res);
 });
+
+user.exports = user;
