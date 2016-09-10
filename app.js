@@ -39,7 +39,6 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use('/user',users);
 
-
 var server = app.listen(3005, function() {
   console.log("Eduino Web Server");
 });

@@ -37,4 +37,4 @@ user.post("/signup", function(req, res){
   controller.signup(req, res);
 });
 
-user.exports = user;
+module.exports = user;
