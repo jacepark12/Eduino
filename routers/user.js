@@ -2,10 +2,12 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var user = express.Router();
-var userController = require('../controllers/userController.js');
+var Controller = require('../controllers/userController.js');
 var bodyParser = require('body-parser');
 //var sha256
 
+
+//router는 user 입니다.
 user.get("/", function(req, res){
 
   if (req.param('url')) {
@@ -34,15 +36,25 @@ user.get("/session", function(req, res){
 });
 
 user.get("/signin", function(req, res){
-  res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
+  if (req.session.email){ //세션에 이메일이 있기만 해도 로그인 되있다고 나옴. 나중에 활용할때 이메일로 그 사람의 프로젝트 db접근해서 불러오게 하면 될듯함.
+      res.send("<script> alert('이미 로그인되어있습니다.'); history.back(); </script>");
+  }
+  else{
+    res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
+  }
+
 });
 
 user.post("/signin", function(req, res){
-  userController.signin(req, res);
+  Controller.signin(req, res);
 });
 
 user.post("/signup", function(req, res){
-  userController.signup(req, res);
+  Controller.signup(req, res);
+});
+
+user.get("/logout", function(req, res){
+  Controller.logout(req, res);
 });
 
 module.exports = user;
