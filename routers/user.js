@@ -1,6 +1,6 @@
 var express = require('express');
 var user = express.Router();
-var controller = require('../controllers/userController.js');
+var userController = require('../controllers/userController.js');
 var bodyParser = require('body-parser');
 //var sha256
 
@@ -30,11 +30,11 @@ user.get("/session", function(req, res){
 });
 
 user.post("/signin", function(req, res){
-  controller.signin(req, res);
+  userController.signin(req, res);
 });
 
 user.post("/signup", function(req, res){
-  controller.signup(req, res);
+  userController.signup(req, res);
 });
 
 module.exports = user;
