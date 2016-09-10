@@ -8,9 +8,9 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-var userController = require('./controllers/userController.js'); // 이 프로젝트는 라우터를 따로 안쓰니까 복잡한듯하다...
+//var userController = require('./controllers/userController.js'); // 이 프로젝트는 라우터를 따로 안쓰니까 복잡한듯하다...
 //var projectController = require('./controllers/projectController.js')
-
+var users = require('./routers/user.js');
 
 mongoose.connect('mongodb://localhost/eduino');
 var db = mongoose.connection;
@@ -37,39 +37,8 @@ app.use(session({
 app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
+app.use('/user',users);
 
-app.get("/", function(req, res){
-
-  if (req.param('url')) {
-    res.render('signin', { url: req.param('url') });
-  } else {
-    res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
-  }
-
-});
-
-//이부분 뭔 기능인지 잘 모르겠다_동우
-app.get("/signup", function(req, res){
-  if (req.param('step') == 'terms') {
-    res.sendfile('./public/signup.html');
-  } else if (req.param('step') == 'form') {
-    res.sendfile('./public/signup_form.html');
-  } else {
-    res.send("<script> location.href = '/signup?step=terms' </script>");
-  }
-});
-
-app.get("/session", function(req, res){
-  res.send(req.session);
-});
-
-app.post("/signin", function(req, res){
-  controller.signin(req, res);
-});
-
-app.post("/signup", function(req, res){
-  controller.signup(req, res);
-});
 
 var server = app.listen(3005, function() {
   console.log("Eduino Web Server");
