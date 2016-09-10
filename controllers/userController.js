@@ -24,7 +24,8 @@ module.exports = {
       if (user) {
 
         req.session.email = email;
-        res.send("<script> location.href = '" + req.body.url + "' </script>");
+        //res.send("<script> location.href = '" + req.body.url + "' </script>");
+        res.send(req.session);
 
       } else {
         res.send("<script> alert('이메일 혹은 비밀번호를 다시 확인해주세요.'); history.back(); </script>");
@@ -58,7 +59,7 @@ module.exports = {
 
           user.save(function (err, user) {
             //res.send(user);
-            res.send("<script> alert('가입되었습니다.'); location.href='http://kactale.com'; </script>")
+            res.send("<script> alert('가입되었습니다.'); location.href='http://localhost:3005'; </script>")
           });
         }
       });
