@@ -43,7 +43,15 @@ app.use("/css",  express.static(__dirname + '/public/css'));
 app.use("/js", express.static(__dirname + '/public/js'));
 app.use("/img",  express.static(__dirname + '/public/js'));
 
-app.use('/user',users);
+//라우터 부분
+app.use('/user', users);
+//app.use('/project', projects);
+
+//임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
+app.get('/', function(req,res){
+  res.send("Main Page");
+});
+
 
 var server = app.listen(3005, function() {
   console.log("Eduino Web Server");
