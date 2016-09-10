@@ -9,9 +9,8 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-//var userController = require('./controllers/userController.js'); // 이 프로젝트는 라우터를 따로 안쓰니까 복잡한듯하다...
-//var projectController = require('./controllers/projectController.js')
 var users = require('./routers/user.js');
+// var projects = require('./routers/project.js'); //라우터명을 s를 붙일지 말지 고민중.... 그리고 아직 안만들어서 주석처리해둠
 
 mongoose.connect('mongodb://serverone1741.cloudapp.net:27017/eduino');
 var db = mongoose.connection;
@@ -31,7 +30,7 @@ app.use(session({
   key: 'sid',
   secret: SECRET_KEY,
   cookie : {
-    maxAge: 2000 * 60 * 60 //2시간
+    maxAge: 1000 * 60 * 60 //1시간
   }
 }));
 
