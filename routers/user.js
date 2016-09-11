@@ -37,8 +37,8 @@ user.get("/session", function(req, res){
 
 user.get("/signin", function(req, res){
   if (req.session.email){ //세션에 이메일이 있기만 해도 로그인 되있다고 나옴. 나중에 활용할때 이메일로 그 사람의 프로젝트 db접근해서 불러오게 하면 될듯함.
-      res.send("<script> alert('이미 로그인되어있습니다.'); history.back(); </script>");
-      //res.render('../view/logout.ejs', {username:req.session.email});
+      console.log('already logined');
+      res.redirect('/user/mypage');
   }
   else{
     res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
@@ -56,6 +56,10 @@ user.post("/signup", function(req, res){
 
 user.get("/logout", function(req, res){
   Controller.logout(req, res);
+});
+
+user.get('/mypage', function(req,res) {
+  Controller.myPage(req, res);
 });
 
 module.exports = user;

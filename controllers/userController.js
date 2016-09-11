@@ -74,6 +74,15 @@ module.exports = {
     req.session.destroy();
     res.clearCookie('sid');
     res.send("<script> location.href='http://localhost:3005' </script>")
+  },
+
+  myPage : function(req, res){
+    if(req.session.email) {
+      res.render('mypage', {username: req.session.email});
+    }else{
+      //TODO 404 페이지만들장
+      res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
+    }
   }
 
 }
