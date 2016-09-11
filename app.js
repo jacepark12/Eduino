@@ -47,10 +47,13 @@ app.use('/user', users);
 //app.use('/project', projects);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
-app.get('/', function(req,res){
+app.get('/', function(req, res){
   res.send("Main Page");
 });
 
+app.get('*', function(req, res){
+  res.status(404).send("Not Found<br>경로를 다시 한번 확인해주세요");
+})
 
 var server = app.listen(3005, function() {
   console.log("Eduino Web Server");
