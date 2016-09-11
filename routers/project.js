@@ -16,3 +16,9 @@ project.post('/save/:id', function(req, res){
   res.send(id+"를 저장함");
   //프로젝트 저장하는 부분
 });
+
+project.post('/add', function(req, res){
+  //project 생성하는 부분
+  //body -> owner: String, contents: String, projectname:String, xml:String
+  Controller.addProject(req, res);
+});
