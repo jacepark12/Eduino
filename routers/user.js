@@ -18,7 +18,7 @@ user.get("/", function(req, res){
 
 });
 
-//이부분 뭔 기능인지 잘 모르겠다_동우
+//이부분 뭔 기능인지 잘 모르겠다_동우, 알아내었다.
 user.get("/signup", function(req, res){
   if (req.param('step') == 'terms') {
     //res.sendfile('../public/signup.html');

@@ -24,7 +24,8 @@ module.exports = {
     model.findOne({ 'owner': req.body.email, 'projectname':req.body.projectname }, function(err, user) {
       if (user) {
         res.send("<script> alert('이미 존재하는 이름입니다. 다시 확인해주세요.'); history.back(); </script>");
-      } else {
+      }
+      else {
         var project = new model(projectData);
 
         user.save(function (err, user) {
