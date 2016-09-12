@@ -10,7 +10,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 
 var users = require('./routers/user.js');
-// var projects = require('./routers/project.js'); //라우터명을 s를 붙일지 말지 고민중.... 그리고 아직 안만들어서 주석처리해둠
+var projects = require('./routers/project.js'); //라우터명을 s를 붙일지 말지 고민중.... 그리고 아직 안만들어서 주석처리해둠
 
 mongoose.connect('mongodb://serverone1741.cloudapp.net:27017/eduino');
 var db = mongoose.connection;
@@ -37,6 +37,7 @@ app.use(session({
 app.set('view engine', 'ejs');
 
 console.log('__dirname : ');
+//using google-blockl
 app.use(express.static(__dirname + '/public'));
 app.use("/css",  express.static(__dirname + '/public/css'));
 app.use("/js", express.static(__dirname + '/public/js'));
@@ -44,7 +45,7 @@ app.use("/img",  express.static(__dirname + '/public/js'));
 
 //라우터 부분
 app.use('/user', users);
-//app.use('/project', projects);
+app.use('/project', projects);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
