@@ -13,28 +13,34 @@ module.exports = {
 
   addProject : function(req, res){
     var email = req.session.email;
+    if (email){ //세션, 이메일이 있는경우
+      var projectData = {
+        owner: email,
+        contents: req.body.description,
+        projectname: req.body.name,
+        xml: ''
+      }
 
-    var projectData = {
-      owner: email,
-      contents: req.body.description,
-      projectname: req.body.name,
-      xml: ''
+      model.findOne({ 'owner': email, 'projectname':req.body.name }, function(err, user) {
+        if (user) {
+          res.send("<script> alert('이미 존재하는 이름입니다. 다시 확인해주세요.'); history.back(); </script>");
+        }
+        else {
+          var project = new model(projectData);
+
+          //TODO Fixed null err
+          project.save(function (err, user) {
+            //res.send(user);
+            res.send("<script> alert('생성되었습니다.'); location.href='http://localhost:3005'; </script>")
+          });
+        }
+      });
+    }
+    else { //세션이 없는경우
+      //TODO 로그인해달라고 alert 하고, 로그인 창으로 리다이렉팅하기
+      res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>")
     }
 
-    model.findOne({ 'owner': email, 'projectname':req.body.name }, function(err, user) {
-      if (user) {
-        res.send("<script> alert('이미 존재하는 이름입니다. 다시 확인해주세요.'); history.back(); </script>");
-      }
-      else {
-        var project = new model(projectData);
-
-        //TODO Fixed null err
-        project.save(function (err, user) {
-          //res.send(user);
-          res.send("<script> alert('생성되었습니다.'); location.href='http://localhost:3005'; </script>")
-        });
-      }
-    });
   },
 
   save : function(req, res, id){
