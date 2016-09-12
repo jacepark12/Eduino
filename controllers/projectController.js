@@ -15,13 +15,13 @@ module.exports = {
     var email = req.session.email;
 
     var projectData = {
-      owner: req.body.ownerEmail,
-      contents: req.body.contents,
-      projectname: req.body.projectname,
+      owner: email,
+      contents: req.body.description,
+      projectname: req.body.name,
       xml: ''
     }
 
-    model.findOne({ 'owner': req.body.email, 'projectname':req.body.projectname }, function(err, user) {
+    model.findOne({ 'owner': email, 'projectname':req.body.name }, function(err, user) {
       if (user) {
         res.send("<script> alert('이미 존재하는 이름입니다. 다시 확인해주세요.'); history.back(); </script>");
       }
