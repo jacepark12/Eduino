@@ -25,8 +25,8 @@ module.exports = {
 
         req.session.email = email;
         //res.send("<script> location.href = '" + req.body.url + "' </script>");
-        res.send(req.session);
-
+        //res.send(req.session);
+        res.redirect("/user/mypage");
       } else {
         res.send("<script> alert('이메일 혹은 비밀번호를 다시 확인해주세요.'); history.back(); </script>");
       }
