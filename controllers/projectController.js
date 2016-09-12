@@ -28,6 +28,7 @@ module.exports = {
       else {
         var project = new model(projectData);
 
+        //TODO Fixed null err
         user.save(function (err, user) {
           //res.send(user);
           res.send("<script> alert('생성되었습니다.'); location.href='http://localhost:3005'; </script>")
