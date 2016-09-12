@@ -17,7 +17,7 @@ module.exports = {
     var projectData = {
       owner: req.body.ownerEmail,
       contents: req.body.contents,
-      projectkname: req.body.projectname,
+      projectname: req.body.projectname,
       xml: ''
     }
 
