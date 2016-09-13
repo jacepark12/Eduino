@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>애플리케이션</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="dva.css">
+
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <span style="width: 100%; background-color: rgba(254, 254, 254, 0.9); display:inline-block;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis; text-align: left;">
+      <%= name %> 님 안녕하십니까
+      <!-- 여기 뭘 줄까.. -->
+    </span>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+	<br />
+	<br />
+	<br />
+	<br />
+    <div class="list_block button" style="background-color: #ddd;">
+		<div style="text-align: center; padding-top: 70px; color: #999;">
+			<i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
+			<br />
+			새로운 프로젝트 만들기
+      <!--TODO 전에 만든 테스트 폼 이쪽에서 해야할듯함 자동으로 프로젝트만들어지게 -->
+		</div>
+	</div>
+  <!-- for로 유저 프로젝트 갯수만큼 디비전 생성  -->
+  <% for(var i in projectArray){ %>
+    <div class="list_block button" style="background-image: url('<%= projectImage %>');">
+  		<div class="list_block_detail">
+  			<span class="list_block_title"><%= i %></span>
+        <!--TODO 난제에 봉착했다. projectName과 projectContent를 배열로 보내주어야 한다. 근데 그럼 2차원 배열로 해야하는가? -->
+  			<span class="list_block_content"><%= projectContent %></span>
+  		</div>
+  	</div>
+  <%}%>
+</div>
+
+<!--<div class="footer">
+  <div class="container">
+    footer
+
+  </div>
+</div>-->
+  <script src="dva.js"></script>
+  <script src="https://use.fontawesome.com/19997febfc.js"></script>
+</body>
+</html>
