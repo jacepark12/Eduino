@@ -9,13 +9,13 @@ var bodyParser = require('body-parser');
 
 //router는 user 입니다.
 user.get("/", function(req, res){
-
-  if (req.param('url')) {
-    res.render('signin', { url: req.param('url') });
-  } else {
-    res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
-  }
-
+  //이거 왜 url이 있어야하는거야
+  // if (req.param('url')) {
+  //   res.render('signin', { url: req.param('url') });
+  // } else {
+  //   res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
+  // }
+  res.render('signin', { url: 'test'});
 });
 
 //이부분 뭔 기능인지 잘 모르겠다_동우, 알아내었다.
