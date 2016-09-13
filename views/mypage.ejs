@@ -23,15 +23,18 @@
         <p>
           <%=username%> 님 안녕하십니까
         </p>
+
+        <button id="btnLogin" onclick="location.href='/project/add';" id="createProject" type="button" class="ui blue button">
+          Create Project
+        </button>
+
         <form class="" action="/user/logout" method="get">
-          <button id="btnLogin" type="submit" class="ui red button">
+          <button type="submit" class="ui blue button">
             Logout
           </button>
         </form>
 
-          <button onclick="location.href='/project/add';" id="createProject" type="button" class="ui red button">
-            Create Project
-          </button>
+
 
     </section>
 

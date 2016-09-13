@@ -15,9 +15,9 @@
   <body>
 
     <section id="loginForm">
-      <img id="logoImg" src="./img/KACTALE_Colored_Dongwoo.png">
+      <img id="logoImg" src="/img/KACTALE_Colored_Dongwoo.png">
 
-      <form action="./signin" method="POST">
+      <form action="/user/signin" method="POST">
         <div id="inputID" class="ui fluid input">
           <input name="email" type="text" placeholder="ID">
         </div>
@@ -25,7 +25,7 @@
           <input name="password" type="password" placeholder="PW">
         </div>
         <input name="url" type="hidden" value="<%=url %>">
-        <button id="btnLogin" type="submit" class="ui red button">
+        <button id="btnLogin" type="submit" class="ui blue button">
           Login
         </button>
       </form>

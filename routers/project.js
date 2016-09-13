@@ -18,8 +18,8 @@ project.post('/save/:id', function(req, res){
 });
 
 project.get('/add', function(req, res){
-  //TODO req.session.email 없으면 예외처리 해주장
-  //Controller로 뺄까? ㄴㄴ 일단 여기다
+  //req.session.email 없으면 예외처리 해주장 -> 해결함
+  //Controller로 뺄까? -> ㄴㄴ 일단 여기다
   var email = req.session.email;
   if (email){ //세션, 이메일이 있는경우
     res.render('createProject', {url : "test"});
