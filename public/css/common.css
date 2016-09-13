@@ -6,17 +6,22 @@ body {
   padding-top:170px;
 }
 
-#loginForm {
+#loginForm, #createProjectForm {
   margin:0 auto;
   max-width: 500px;
   text-align: center;
 }
 
-#loginForm * {
+#loginForm *, #createProjectForm * {
   margin-bottom:5px;
 }
 
 #loginForm form input {
+  padding:15px;
+  font-size:12pt;
+}
+
+#createProjectForm form input {
   padding:15px;
   font-size:12pt;
 }
