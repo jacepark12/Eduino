@@ -16,8 +16,10 @@
 <body>
 
 <section id="createProjectForm">
-    <img id="logoImg" src="ㄴ/img/KACTALE_Colored_Dongwoo.png">
-
+    <img id="logoImg" src="/img/KACTALE_Colored_Dongwoo.png">
+    <p>
+      프로젝트 생성 페이지입니다.<br>
+    </p>
     <form action="/project/add" method="POST">
         <div id="inputName" class="ui fluid input">
             <input name="name" type="text" placeholder="Name">
@@ -26,12 +28,12 @@
             <input name="description" type="text" placeholder="Description">
         </div>
         <input name="url" type="hidden" value="<%=url %>">
-        <button id="btnAdd" type="submit" class="ui red button">
+        <button id="btnAdd" type="submit" class="ui blue button">
             Add
         </button>
     </form>
 
-    <div id="join"> <a href="./signup"> 계정이 없다면? </a> </div>
+    <!-- <div id="join"> <a href="./signup"> 계정이 없다면? </a> </div> -->
 
 </section>
 
