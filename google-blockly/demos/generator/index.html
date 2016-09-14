@@ -40,7 +40,7 @@
   <script src="../../javascript_compressed.js"></script>
 
   <script src="../../msg/js/en.js"></script>
-  <link rel="stylesheet" href="dva.css">
+  <link rel="stylesheet" href="../../blocks/dva.css">
 
 </head>
 <body style="">
@@ -419,6 +419,9 @@
       </category>
     </category>-->
   </xml>
+
+  <xml id="startBlocks" style="display: none">
+  </xml>
   <script>
     var workspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
@@ -431,6 +434,11 @@
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.JavaScript.workspaceToCode(workspace);
       alert(code);
+
+      //Test code for saving blocks as text
+      var xml = Blockly.Xml.workspaceToDom(workspace);
+      var xml_text = Blockly.Xml.domToText(xml);
+      console.log(xml_text);
     }
 
     function runCode() {
@@ -447,7 +455,7 @@
       }
     }
   </script>
-  <script src="dva.js"></script>
+  <script src="../../blocks/dva.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
 </body>
 </html>
