@@ -15,7 +15,14 @@ user.get("/", function(req, res){
   // } else {
   //   res.send("<script> alert('잘못된 접근입니다.'); history.back(); </script>");
   // }
-  res.render('signin', { url: 'test'});
+  if (req.session.email){ //세션에 이메일이 있기만 해도 로그인 되있다고 나옴. 나중에 활용할때 이메일로 그 사람의 프로젝트 db접근해서 불러오게 하면 될듯함.
+      console.log('already logined');
+      res.redirect('/user/mypage');
+  }
+  else{
+    res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
+  }
+
 });
 
 //이부분 뭔 기능인지 잘 모르겠다_동우, 알아내었다.
