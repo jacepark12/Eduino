@@ -6,9 +6,17 @@ var model = require('../models/projectModel.js');
 
 module.exports = {
 
-  getProject : function(req, res){
+  projectList : function(req, res){
     var email = req.session.email;
     //session 에 있는 아이디의 프로젝트를 불러와서 렌더해서 보내주는 부분을 만들려 합니다
+    model.find({'owner' : email}, function(err, doc){
+        if(err) throw err;
+        console.log(doc);
+
+        res.render('projectlist', {name : email, projectArray : doc});
+    });
+
+
   },
 
   addProject : function(req, res){
@@ -16,12 +24,17 @@ module.exports = {
     if (email){ //세션, 이메일이 있는경우
       var projectData = {
         owner: email,
-        contents: req.body.description,
+        description: req.body.description,
         projectname: req.body.name,
         xml: ''
       }
 
-      model.findOne({ 'owner': email, 'projectname':req.body.name }, function(err, user) {
+      model.findOne({'owner': email, 'projectname':req.body.name }, function(err, user) {
+        if(err){
+          console.log(err);
+          throw err;
+        }
+
         if (user) {
           res.send("<script> alert('이미 존재하는 이름입니다. 다시 확인해주세요.'); history.back(); </script>");
         }
