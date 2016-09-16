@@ -7,7 +7,7 @@
   <title>애플리케이션</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="dva.css">
+  <link rel="stylesheet" href="/css/eduinoprojectlist.css">
 
 </head>
 <body>
@@ -39,14 +39,15 @@
 	</div>
   <!-- for로 유저 프로젝트 갯수만큼 디비전 생성  -->
   <% for(var i in projectArray){ %>
-    <div class="list_block button" style="background-image: url('<%= projectImage %>');">
+    <div class="list_block button">
   		<div class="list_block_detail">
-  			<span class="list_block_title"><%= i %></span>
+  			<span class="list_block_title"><%= projectArray[i].projectname %></span>
         <!--TODO 난제에 봉착했다. projectName과 projectContent를 배열로 보내주어야 한다. 근데 그럼 2차원 배열로 해야하는가? -->
-  			<span class="list_block_content"><%= projectContent %></span>
+  			<span class="list_block_content"><%= projectArray[i].description %></span>
   		</div>
   	</div>
   <%}%>
+    </div>
 </div>
 
 <!--<div class="footer">
@@ -55,7 +56,7 @@
 
   </div>
 </div>-->
-  <script src="dva.js"></script>
+  <script src="/js/eduinoprojectlist.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
 </body>
 </html>
