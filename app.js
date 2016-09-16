@@ -36,7 +36,7 @@ app.use(session({
 
 app.set('view engine', 'ejs');
 
-console.log('__dirname : ');
+//console.log('__dirname : ');
 //using google-blockl
 app.use(express.static(__dirname + '/public'));
 app.use("/css",  express.static(__dirname + '/public/css'));
