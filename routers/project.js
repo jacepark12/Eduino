@@ -7,9 +7,11 @@ var bodyParser = require('body-parser');
 
 //router는 project 입니다.
 
-project.get('/', function(req, res){
-  res.send("/project/");
+project.get('/list', function(req, res){
+  //res.send("/project/");
   //프로젝트 초기화면
+  //프로젝트 리스르틀 보여주장
+  Controller.projectList(req,res);
 });
 
 project.post('/save/:id', function(req, res){
