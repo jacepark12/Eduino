@@ -9,12 +9,19 @@ module.exports = {
   projectList : function(req, res){
     var email = req.session.email;
     //session 에 있는 아이디의 프로젝트를 불러와서 렌더해서 보내주는 부분을 만들려 합니다
-    model.find({'owner' : email}, function(err, doc){
-        if(err) throw err;
-        console.log(doc);
+    //TODO session 이 없으면 로그인 페이지로 이동
+    if(email) {
+      model.find({'owner' : email}, function(err, doc){
+          if(err) throw err;
+          console.log(doc);
 
-        res.render('projectlist', {name : email, projectArray : doc});
-    });
+          res.render('projectlist', {name : email, projectArray : doc});
+      });
+    }else{
+      //TODO 404 페이지만들장
+      res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>");
+    }
+
 
 
   },
