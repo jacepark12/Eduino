@@ -15,9 +15,11 @@ There are two editors in Eduino
 
 ###Features 
 
->DONE 
+> DONE 
 
 * Online Storage
+* Web Server (by node.js, express)
+
 
 > TODO
 
@@ -34,7 +36,8 @@ There are two editors in Eduino
  
  * email : jspark141515@gmail.com
  
-* KIMDONGWOO
+* Kim Dongwoo
  * Korea Digital Media High School
+ * email : andandend2847@gmail.com
 
 
