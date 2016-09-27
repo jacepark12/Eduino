@@ -49,7 +49,7 @@ app.use('/project', projects);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
-  res.send("Main Page");
+  res.sendfile('/public/');
 });
 
 app.get('*', function(req, res){
