@@ -42,6 +42,7 @@ app.use(express.static(__dirname + '/public'));
 app.use("/css",  express.static(__dirname + '/public/css'));
 app.use("/js", express.static(__dirname + '/public/js'));
 app.use("/img",  express.static(__dirname + '/public/js'));
+app.use("/media", express.static(__dirname + '/public/media'));
 
 //라우터 부분
 app.use('/user', users);
@@ -50,6 +51,10 @@ app.use('/project', projects);
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
   res.render('mainpage',{'session': req.session});
+});
+
+app.get('/test/blockly', function(req, res){
+  res.render('workspace');
 });
 
 app.get('*', function(req, res){

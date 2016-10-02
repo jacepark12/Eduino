@@ -1,0 +1,249 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);*/
+
+@media screen{
+	*{
+		margin: 0px;
+		padding: 0px;
+
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -moz-user-select: -moz-none;
+	}
+	
+    img{
+        border: none;
+    }
+    
+    textarea{
+        resize: none;
+    }
+    html{
+        height:100%;
+        width:100%;
+        padding:0px;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        font-family: 'Noto Sans KR', sans-serif;
+        overflow-x: hidden; 
+        background-image: url('/img/background.jpg');
+		background-repeat: repeat;
+    }
+
+    pre{
+        font-family: 'Noto Sans KR', sans-serif;
+        
+    }
+
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		z-index: 200;
+		left: 0px;
+		top: 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+		
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+		background-color: transparent;
+		color: black;
+		line-height: 75px;
+		padding: 30px 0px;
+
+		font-size: 20px;
+	}
+
+	.header.scrolled{
+		height: 40px;
+		/*background-color: #8e5da0;
+		color: white;*/
+		/*color: #8e5da0;*/
+		padding: 0px;
+	}
+
+	.wrapper{
+		width: 100%;
+		height: auto;
+		position: relative;
+
+		padding-top: 110px;
+	}
+
+	.container{
+		width: 100%;
+		height: auto;
+		/*background-color: rgba(254, 254, 254, 0.9);*/
+	}
+
+	
+
+	.button{
+		width: auto;
+		height: auto;
+		padding: 10px 20px;
+		font-size: 16px;
+		border: 1px solid #eee;
+		background-color: #fff;
+		
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+		
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+	}
+
+	.button:hover{
+		background-color: rgb(125, 159, 278);
+	}
+
+	.button:active{
+		background-color: rgb(85, 119, 238);
+		border: 1px solid rgb(85, 119, 238);
+		color: #fff;
+        -moz-transform: scale(0.95);  
+        -webkit-transform: scale(0.95);  
+        -o-transform: scale(0.95);  
+        -ms-transform: scale(0.95);  
+        transform: scale(0.95);  
+        -webkit-transition: all 0.08s ease-in-out;
+        -moz-transition: all 0.08s ease-in-out;
+        transition: all 0.08s ease-in-out;
+	}
+
+	#blocklyDiv{
+		width: 100%;
+		height: calc(100vh - 110px);
+	}
+
+	.list_block{
+		width: 240px;
+		height: 240px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		float: left;
+		position: relative;
+		background-color: white;
+		cursor: pointer;
+	}
+
+	.list_block .list_block_detail{
+		width: 100%;
+		height: 70px;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		background-color: #eee;
+
+	}
+
+	.list_block .list_block_detail .list_block_title{
+		padding: 2px 5px;
+		padding-bottom: 0px;
+		color: #555;
+		display: block;
+	}
+
+	.list_block .list_block_detail .list_block_content{
+		padding: 0px 5px;
+		color: #888;
+		display: block;
+	}
+
+	.blocklyWorkspace{
+		background-color: transparent !important;
+	}
+	.blocklySvg{
+		background-color: rgba(254, 254, 254, 1) !important;
+	}
+
+	.blocklyTreeRow{
+		padding: 10px 0px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+		min-width: 200px;
+	}
+
+	.blocklyTreeRow:active{
+		
+        -moz-transform: scale(0.95);  
+        -webkit-transform: scale(0.95);  
+        -o-transform: scale(0.95);  
+        -ms-transform: scale(0.95);  
+        transform: scale(0.95);  
+        -webkit-transition: all 0.08s ease-in-out;
+        -moz-transition: all 0.08s ease-in-out;
+        transition: all 0.08s ease-in-out;
+	}
+
+	.blocklyFlyoutBackground{
+		
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.container{
+		width: 960px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}
+
+@media screen and (max-width: 960px){
+
+	body{
+		width: 96%;
+		margin-left: 2%;
+	}
+	.header{
+		height: 75px;
+		padding: 0px;
+		padding-left: 2%;
+	}
+
+	.wrapper{
+		padding-top: 75px;
+	}
+
+	#blocklyDiv{
+		width: 100%;
+		height: calc(100vh - 75px);
+	}
+	
+	.blocklyTreeRow{
+		min-width: 0px;
+	}
+}
+@media screen and (max-width: 520px){
+
+	.list_block{
+		width: calc(100% - 20px);
+		background-position-x: center;
+		background-repeat: no-repeat;
+		margin: 10px;
+	}
+
+	.list_block:hover, .list_block:active{
+		background-color: #fff;
+	}
+}
