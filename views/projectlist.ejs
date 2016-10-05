@@ -29,15 +29,12 @@
 	<br />
 	<br />
 	<br />
-    <div class="list_block button" style="background-color: #ddd;">
-        <form action="/project/add" method="get">
+    <div class="list_block button" style="background-color: #ddd;" onclick="location.href='/project/add';">
 		<div style="text-align: center; padding-top: 70px; color: #999;">
-			<i href = ""class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
+			<i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
 			<br />
 			새로운 프로젝트 만들기
-      <!--TODO 전에 만든 테스트 폼 이쪽에서 해야할듯함 자동으로 프로젝트만들어지게 -->
 		</div>
-        </form>
 	</div>
   <!-- for로 유저 프로젝트 갯수만큼 디비전 생성  -->
   <% for(var i in projectArray){ %>
@@ -52,12 +49,6 @@
     </div>
 </div>
 
-<!--<div class="footer">
-  <div class="container">
-    footer
-
-  </div>
-</div>-->
   <script src="/js/eduinoprojectlist.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
 </body>
