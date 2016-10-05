@@ -40,4 +40,18 @@ There are two editors in Eduino
  * Korea Digital Media High School
  * email : andandend2847@gmail.com
 
+###Develop Guide
+
+#### Save Blockly workspace and load
+
+~~~
+//save as xml
+var xml_text = Blockly.Xml.domToText(xml);
+
+//load xml to workspace
+var xml = Blockly.Xml.textToDom(xml_text);
+Blockly.Xml.domToWorkspace(xml, workspace);
+
+~~~
+
 
