@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <title>애플리케이션</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
+
   <script src="/js/blockly_compressed.js"></script>
 
   <script src="/js/blocks/colour.js"></script>
@@ -52,7 +52,7 @@
 <div class="wrapper">
   <div class="container">
     <p>
-      
+
     </p>
 
     <div id="blocklyDiv"></div>
@@ -401,9 +401,45 @@
         </block>
       </category>
     </category>-->
-  </xml>
 
+    <!-- <xml xmlns="http://www.w3.org/1999/xhtml">
+      <block type="variables_set" id="a3c?VE)|oP.vv(:Zhls~" x="-2" y="142">
+        <field name="VAR">test</field><value name="VALUE">
+          <block type="lists_create_with" id="HMpIs4EC@(~9_H=#+C?b">
+            <mutation items="4"></mutation>
+          <value name="ADD0">
+            <block type="logic_compare" id="16_(O[Xtc/XPXwD.D]3X">
+              <field name="OP">EQ</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="math_number" id="e~}O,n)~Z.@SsOd%.aaK">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="math_number" id="jIUoFR4Cu6jb[U%p.bY(">
+              <field name="NUM">0</field></block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntil" id="~Ig/9g.bkRnh@lm,3jWD">
+            <field name="MODE">WHILE</field>
+            <statement name="DO">
+              <block type="controls_whileUntil" id="w]UB.g`*DAEx?l8~5jEg">
+                <field name="MODE">WHILE</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </xml> -->
+
+  </xml>
+ <!-- 이 아래쪽에(startBlocks) xml 안쪽에 xml_text를 넣어주면 이전 블록이 불러와짐...! -->
   <xml id="startBlocks" style="display: none">
+    <%=xml_text %>
   </xml>
   <script>
     var workspace = Blockly.inject('blocklyDiv',
@@ -437,6 +473,10 @@
         alert(e);
       }
     }
+    // function generateDom(xml_text){
+    //   Blockly.Xml.TextTodom(xml_text);
+    //   Blockly.Xml.domToWorkspace()
+    // }
   </script>
   <script src="/js/dva.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
