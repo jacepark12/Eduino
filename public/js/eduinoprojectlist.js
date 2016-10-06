@@ -28,6 +28,7 @@ $(document).ready(function(){
 	});
 	functionScroll();
 
+	/*
 	$("body").on("click", ".list_block", function(){
 		location.replace("index.html");
 	});
@@ -36,5 +37,7 @@ $(document).ready(function(){
 		location.replace("list.html");
 		
 	});
+	*/
+
 	// $(".blocklyTreeRow").addClass("button")
 });
