@@ -41,10 +41,12 @@
 	</div>
   <!-- for로 유저 프로젝트 갯수만큼 디비전 생성  -->
   <% for(var i in projectArray){ %>
+    <!-- TODO 프로젝트 링크는 프로젝트 _id로 하려고 함. (project/:_id로 접근하면 그 접근권한 확인해서 렌더해줄건데, 여기에 링크 주소를 그렇게 저장해주어야함.) -->
+    <!-- 근데 이거 버튼 누르면 어떤 스크립트가 돌아가는건지....; -->
+    <a href="./test/<%= projectArray[i].id%>"></a>
     <div class="list_block button">
   		<div class="list_block_detail">
   			<span class="list_block_title"><%= projectArray[i].projectname %></span>
-        
   			<span class="list_block_content"><%= projectArray[i].description %></span>
   		</div>
   	</div>
