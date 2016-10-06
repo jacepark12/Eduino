@@ -69,7 +69,7 @@ module.exports = {
     var xml_text = req.body.xml_text;
     var date = new Date();
     // 특정 프로젝트를 특정할 때 키는 무엇으로 하지...? -> _id 로
-    model.findOne({'email':email, '_id':id}, function(err, project){
+    model.findOne({'owner':email, 'projectname':id}, function(err, project){
       project.update({'xml':xml_text, 'modifiedDate':date});
       project.save(function(err, project){
         res.send("<script> alert('저장되었습니다.');")
@@ -78,11 +78,16 @@ module.exports = {
   },
   renderproject: function(req, res, id){
     var email = req.session.email;
-    model.findOne({'email':email, '_id':id}, function(err, project){
+    model.findOne({'owner':email, 'projectname':id}, function(err, project){
+
+      if(err) throw err;
+
       if(project){
         var xml_text = project.xml;
-        res.send(xml_text);
-        //res.render(workspace,{xml_text: xml_text});
+        console.log(project);
+        console.log(xml_text);
+        //res.send(xml_text);
+        res.render('workspace',{xml_text: xml_text});
       }
       else{
         res.send("찾을수없습니다");
