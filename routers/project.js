@@ -38,5 +38,8 @@ project.post('/add', function(req, res){
   //body -> owner: String, contents: String, projectname:String, xml:String
   Controller.addProject(req, res);
 });
+project.get('/test/:id', function(req, res){
+  Controller.renderproject(req,res, id);
+});
 
 module.exports = project;
