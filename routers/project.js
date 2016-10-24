@@ -20,6 +20,7 @@ project.post('/save/:id', function(req, res){
 });
 
 project.get('/add', function(req, res){
+  //TODO 이거 Controller 모듈로 빼야함
   //req.session.email 없으면 예외처리 해주장 -> 해결함
   //Controller로 뺄까? -> ㄴㄴ 일단 여기다
   var email = req.session.email;
@@ -36,6 +37,10 @@ project.post('/add', function(req, res){
   //project 생성하는 부분
   //body -> owner: String, contents: String, projectname:String, xml:String
   Controller.addProject(req, res);
+});
+
+project.get('/workspace/:name', function(req, res){
+  Controller.showProject(req,res);
 });
 
 module.exports = project;

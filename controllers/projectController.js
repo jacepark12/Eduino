@@ -22,7 +22,22 @@ module.exports = {
       res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>");
     }
 
+  },
 
+  showProject: function(req, res){
+
+    var projectName = req.params.name;
+
+    console.log('showProject projectname : ', projectName);
+
+    model.find({'projectname' : projectName}, function(err, doc){
+      if(err){
+        throw err;
+      }else{
+        console.log('project xml : ', doc.xml);
+        res.render('workspace',{'projectxml' : doc.xml});
+      }
+    });
 
   },
 
