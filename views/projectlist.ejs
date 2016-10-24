@@ -38,13 +38,15 @@
 	</div>
   <!-- for로 유저 프로젝트 갯수만큼 디비전 생성  -->
   <% for(var i in projectArray){ %>
-    <div class="list_block button">
+      <form action="/project/workspace/<%=projectArray[i].projectname %>" method="get">
+    <button type = "submit" class="list_block button">
   		<div class="list_block_detail">
   			<span class="list_block_title"><%= projectArray[i].projectname %></span>
         
   			<span class="list_block_content"><%= projectArray[i].description %></span>
   		</div>
-  	</div>
+  	</button>
+          </form>
   <%}%>
     </div>
 </div>
