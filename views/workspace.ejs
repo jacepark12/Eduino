@@ -35,6 +35,8 @@
   <p>&rarr; More info on <a href="https://developers.google.com/blockly/guides/configure/web/code-generators">Code Generators</a>&hellip;</p>-->
 
 <div class="header">
+  <div class="user-info">
+  </div>
   <div class="container">
     <span style="float: right; background-color: rgba(254, 254, 254, 0.9); display:inline-block;
     white-space: nowrap;
@@ -45,6 +47,7 @@
       <button class="button go_back" style="float: left;"><i class="fa fa-2x fa-arrow-circle-o-left" aria-hidden="true"></i><br />뒤로가기</button>
       <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i><br />스크립트</button>
       <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />적용하기</button>
+      <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
     </div>
   </div>
 </div>
@@ -243,6 +246,20 @@
       } catch (e) {
         alert(e);
       }
+    }
+
+    function loadCode(){
+      console.log('<%= projectxml%>')
+      //var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
+      var xml = Blockly.Xml.textToDom(htmlDecode('<%= projectxml%>'));
+      Blockly.Xml.domToWorkspace(xml, workspace);
+      alert('Load Source Code!');
+    }
+
+    function htmlDecode(input){
+      var e = document.createElement('div');
+      e.innerHTML = input;
+      return e.childNodes[0].nodeValue;
     }
   </script>
   <script src="/js/dva.js"></script>
