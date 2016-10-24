@@ -33,7 +33,7 @@ $(document).ready(function(){
 	});
 
 	$("body").on("click", ".go_back", function(){
-		location.replace("list.html");
+		location.replace("/project/list");
 		
 	});
 	// $(".blocklyTreeRow").addClass("button")

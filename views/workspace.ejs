@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <title>애플리케이션</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
+
   <script src="/js/blockly_compressed.js"></script>
 
   <script src="/js/blocks/colour.js"></script>
@@ -55,7 +55,7 @@
 <div class="wrapper">
   <div class="container">
     <p>
-      
+
     </p>
 
     <div id="blocklyDiv"></div>
@@ -206,8 +206,11 @@
     <category name="함수" custom="PROCEDURE"></category>
     <sep></sep>
   </xml>
+  </xml>
 
+ <!-- 이 아래쪽에(startBlocks) xml 안쪽에 xml_text를 넣어주면 이전 블록이 불러와짐...! -->
   <xml id="startBlocks" style="display: none">
+<!--    <%=projectxml%> -->
   </xml>
   <script>
 
@@ -220,6 +223,7 @@
                                workspace);
 
     function showCode() {
+
       // Generate JavaScript code and display it.
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.JavaScript.workspaceToCode(workspace);

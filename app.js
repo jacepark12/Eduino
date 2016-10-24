@@ -54,7 +54,9 @@ app.get('/', function(req, res){
 });
 
 app.get('/test/blockly', function(req, res){
-  res.render('workspace');
+  //res.render(workspace,{'xml_text':});
+  
+
 });
 
 app.get('*', function(req, res){

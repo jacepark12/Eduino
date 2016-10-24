@@ -23,7 +23,7 @@ module.exports = {
     }
 
   },
-
+/*
   showProject: function(req, res){
 
     var projectName = req.params.name;
@@ -39,7 +39,7 @@ module.exports = {
       }
     });
 
-  },
+  },*/
 
   addProject : function(req, res){
     var email = req.session.email;
@@ -81,10 +81,36 @@ module.exports = {
   save : function(req, res, id){
     //이건 프로젝트 저장부분  id는 프로젝트 _id임
     var email = req.session.email;
-    // 특정 프로젝트를 특정할 때 키는 무엇으로 하지...?
-    model.findOne({'email':email, '_id':id}, function(err, project){
-
+    var xml_text = req.body.xml_text;
+    var date = new Date();
+    // 특정 프로젝트를 특정할 때 키는 무엇으로 하지...? -> _id 로
+    model.findOne({'owner':email, 'projectname':id}, function(err, project){
+      project.update({'xml':xml_text, 'modifiedDate':date});
+      project.save(function(err, project){
+        res.send("<script> alert('저장되었습니다.');")
+      });
     });
+  },
+
+  renderproject: function(req, res, id){
+    var email = req.session.email;
+    model.findOne({'owner':email, 'projectname':req.params.name}, function(err, project){
+
+      if(err) throw err;
+
+      if(project){
+        var xml_text = project.xml;
+        console.log(project);
+        console.log(xml_text);
+        //res.send(xml_text);
+        res.render('workspace',{projectxml: xml_text});
+      }
+      else{
+        res.send("찾을수없습니다");
+      }
+    });
+    //res.render(workspace,{'xml_text':});
+
   }
 
 }

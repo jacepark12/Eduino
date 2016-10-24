@@ -49,6 +49,7 @@ user.get("/signin", function(req, res){
   }
   else{
     res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
+    //res.render(signin);
   }
 
 });

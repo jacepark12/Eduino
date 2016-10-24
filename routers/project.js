@@ -15,7 +15,8 @@ project.get('/list', function(req, res){
 });
 
 project.post('/save/:id', function(req, res){
-  res.send(id+"를 저장함");
+  //res.send(id+"를 저장함");
+  Controller.save(req, res, id);
   //프로젝트 저장하는 부분
 });
 
@@ -38,9 +39,14 @@ project.post('/add', function(req, res){
   //body -> owner: String, contents: String, projectname:String, xml:String
   Controller.addProject(req, res);
 });
+project.get('/test/:id', function(req, res){
+  var id = req.param.id;
+
+  Controller.renderproject(req,res,id);
+});
 
 project.get('/workspace/:name', function(req, res){
-  Controller.showProject(req,res);
+  Controller.renderproject(req,res);
 });
 
 module.exports = project;
