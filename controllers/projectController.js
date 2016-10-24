@@ -23,23 +23,6 @@ module.exports = {
     }
 
   },
-/*
-  showProject: function(req, res){
-
-    var projectName = req.params.name;
-
-    console.log('showProject projectname : ', projectName);
-
-    model.find({'projectname' : projectName}, function(err, doc){
-      if(err){
-        throw err;
-      }else{
-        console.log('project xml : ', doc.xml);
-        res.render('workspace',{'projectxml' : doc.xml});
-      }
-    });
-
-  },*/
 
   addProject : function(req, res){
     var email = req.session.email;
@@ -48,7 +31,7 @@ module.exports = {
         owner: email,
         description: req.body.description,
         projectname: req.body.name,
-        xml: ''
+        xml: '<xml xmlns="http://www.w3.org/1999/xhtml"></xml>' // default project_xml
       }
 
       model.findOne({'owner': email, 'projectname':req.body.name }, function(err, user) {
@@ -75,42 +58,48 @@ module.exports = {
       //TODO 로그인해달라고 alert 하고, 로그인 창으로 리다이렉팅하기
       res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>")
     }
-
   },
 
-  save : function(req, res, id){
-    //이건 프로젝트 저장부분  id는 프로젝트 _id임
+  save : function(req, res){
+    //이건 프로젝트 저장부분 id는 프로젝트 _id임
+    var project_name = req.params.name;
     var email = req.session.email;
-    var xml_text = req.body.xml_text;
+    var xml = req.body.xml;
     var date = new Date();
+
+    console.log('project save');
+    console.log('project xml : ', xml)
     // 특정 프로젝트를 특정할 때 키는 무엇으로 하지...? -> _id 로
-    model.findOne({'owner':email, 'projectname':id}, function(err, project){
-      project.update({'xml':xml_text, 'modifiedDate':date});
-      project.save(function(err, project){
-        res.send("<script> alert('저장되었습니다.');")
-      });
+    model.findOne({'owner':email, 'projectname': project_name}, function(err, project){
+
+      project.xml = xml;
+      project.save();
+      res.send("alert('저장되었습니다.');");
     });
   },
 
   renderproject: function(req, res, id){
     var email = req.session.email;
-    model.findOne({'owner':email, 'projectname':req.params.name}, function(err, project){
+    var project_name = req.params.name;
+
+    console.log('Rendering project : ' , project_name + ' / ' + email);
+    model.findOne({'owner':email, 'projectname': project_name}, function(err, project){
 
       if(err) throw err;
 
       if(project){
         var xml_text = project.xml;
         console.log(project);
-        console.log(xml_text);
-        //res.send(xml_text);
-        res.render('workspace',{projectxml: xml_text});
+        console.log('xml_text : ' , xml_text);
+        res.render('workspace',
+            { projectxml : xml_text,
+              projectname : project_name
+        });
       }
       else{
         res.send("찾을수없습니다");
       }
     });
-    //res.render(workspace,{'xml_text':});
-
   }
 
 }

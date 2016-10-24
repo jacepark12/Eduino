@@ -14,12 +14,6 @@ project.get('/list', function(req, res){
   Controller.projectList(req,res);
 });
 
-project.post('/save/:id', function(req, res){
-  //res.send(id+"를 저장함");
-  Controller.save(req, res, id);
-  //프로젝트 저장하는 부분
-});
-
 project.get('/add', function(req, res){
   //TODO 이거 Controller 모듈로 빼야함
   //req.session.email 없으면 예외처리 해주장 -> 해결함
@@ -39,6 +33,8 @@ project.post('/add', function(req, res){
   //body -> owner: String, contents: String, projectname:String, xml:String
   Controller.addProject(req, res);
 });
+
+// TODO Rmove legacy code
 project.get('/test/:id', function(req, res){
   var id = req.param.id;
 
@@ -47,6 +43,11 @@ project.get('/test/:id', function(req, res){
 
 project.get('/workspace/:name', function(req, res){
   Controller.renderproject(req,res);
+});
+
+// TODO Rename URL
+project.post('/workspace/:name', function(req, res){
+  Controller.save(req, res);
 });
 
 module.exports = project;

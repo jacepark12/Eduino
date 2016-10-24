@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <title>애플리케이션</title>
+  <title>Eduino</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <script src="/js/blockly_compressed.js"></script>
@@ -48,6 +48,7 @@
       <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i><br />스크립트</button>
       <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />적용하기</button>
       <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
+      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
     </div>
   </div>
 </div>
@@ -62,12 +63,6 @@
   </div>
 </div>
 
-<!--<div class="footer">
-  <div class="container">
-    footer
-
-  </div>
-</div>-->
   <xml id="toolbox" style="display: none">
     <!--<category name="Logic">-->
     <category name='만약에'>
@@ -210,7 +205,7 @@
 
  <!-- 이 아래쪽에(startBlocks) xml 안쪽에 xml_text를 넣어주면 이전 블록이 불러와짐...! -->
   <xml id="startBlocks" style="display: none">
-<!--    <%=projectxml%> -->
+<!--    <%= projectxml %> -->
   </xml>
   <script>
 
@@ -222,23 +217,17 @@
     Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
                                workspace);
 
-    function showCode() {
+    loadCode();
 
+    function showCode() {
       // Generate JavaScript code and display it.
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.JavaScript.workspaceToCode(workspace);
       alert(code);
 
-      //Test code for saving blocks as text
-      var xml = Blockly.Xml.workspaceToDom(workspace);
-      xml_text = Blockly.Xml.domToText(xml);
-      console.log(xml_text);
-    }
+      }
 
     function runCode() {
-      var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
-      Blockly.Xml.domToWorkspace(xml, workspace);
-      alert('Load Source Code!');
       // Generate JavaScript code and run it.
       window.LoopTrap = 1000;
       Blockly.JavaScript.INFINITE_LOOP_TRAP =
@@ -252,7 +241,39 @@
       }
     }
 
+    function saveCode(){
+      var xml = Blockly.Xml.workspaceToDom(workspace);
+      xml_text = Blockly.Xml.domToText(xml);
+
+      var xmlRequest;
+      var params = 'xml=' + xml_text;
+
+      if (window.XMLHttpRequest)
+      {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlRequest=new XMLHttpRequest();
+      }
+      else
+      {// code for IE6, IE5
+        xmlRequest=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      xmlRequest.onreadystatechange=function()
+      {
+        if (xmlRequest.readyState==4 && xmlRequest.status==200)
+        {
+          msg = xmlRequest.responseText;
+          alert(msg);
+        }
+      }
+      xmlRequest.open("POST",'/project/workspace/<%= projectname%>',true);
+      xmlRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+      xmlRequest.setRequestHeader("Cache-Control","no-cache, must-revalidate");
+      xmlRequest.setRequestHeader("Pragma","no-cache");
+      xmlRequest.send(params);
+    s}
+
     function loadCode(){
+      console.log('loadCode function ');
       console.log('<%= projectxml%>')
       //var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
       var xml = Blockly.Xml.textToDom(htmlDecode('<%= projectxml%>'));
@@ -265,6 +286,20 @@
       e.innerHTML = input;
       return e.childNodes[0].nodeValue;
     }
+
+    /*
+    sample of loading workspace
+     var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
+     Blockly.Xml.domToWorkspace(xml, workspace);
+     alert('Load Source Code!');
+     */
+
+    /*
+    sample of saving workspace
+     var xml = Blockly.Xml.workspaceToDom(workspace);
+     xml_text = Blockly.Xml.domToText(xml);
+     console.log(xml_text);
+     */
   </script>
   <script src="/js/dva.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
