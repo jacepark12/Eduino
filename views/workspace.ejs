@@ -46,9 +46,10 @@
     <div style="position: absolute;">
       <button class="button go_back" style="float: left;"><i class="fa fa-2x fa-arrow-circle-o-left" aria-hidden="true"></i><br />뒤로가기</button>
       <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i><br />스크립트</button>
-      <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />적용하기</button>
+      <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />실행하기</button>
       <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
-      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
+      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />저장하기</button>
+      <button class="button" style="float: left;"><br /><span id="statlabel">TEST</span></button>
     </div>
   </div>
 </div>
@@ -262,7 +263,8 @@
         if (xmlRequest.readyState==4 && xmlRequest.status==200)
         {
           msg = xmlRequest.responseText;
-          alert(msg);
+          //alert(msg);
+          document.getElementById('statlabel').innerHTML = msg;
         }
       }
       xmlRequest.open("POST",'/project/workspace/<%= projectname%>',true);
