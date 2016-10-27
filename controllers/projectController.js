@@ -74,7 +74,7 @@ module.exports = {
 
       project.xml = xml;
       project.save();
-      res.send("alert('저장되었습니다.');");
+      res.send("저장되었습니다.");
     });
   },
 
