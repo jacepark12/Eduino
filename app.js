@@ -10,7 +10,8 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 
 var users = require('./routers/user.js');
-var projects = require('./routers/project.js'); //라우터명을 s를 붙일지 말지 고민중.... 그리고 아직 안만들어서 주석처리해둠
+var projects = require('./routers/project.js');
+var blockfactory = require('./routers/blockfactory.js');
 
 mongoose.connect('mongodb://serverone1741.cloudapp.net:27017/eduino');
 var db = mongoose.connection;
@@ -47,6 +48,7 @@ app.use("/media", express.static(__dirname + '/public/media'));
 //라우터 부분
 app.use('/user', users);
 app.use('/project', projects);
+app.use('/blockfactory', blockfactory);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
@@ -55,7 +57,6 @@ app.get('/', function(req, res){
 
 app.get('/test/blockly', function(req, res){
   //res.render(workspace,{'xml_text':});
-  
 
 });
 

@@ -12,9 +12,12 @@ module.exports = {
         res.render('blockfactory');
     },
 
+    /*
     newBlock : function (req, res) {
+        var category =
         var blockname
         var blockdescription
-        var
-    }
+        var blockjs
+        var generatorjs
+    }*/
 }

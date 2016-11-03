@@ -7,7 +7,6 @@ var project = express.Router();
 var Controller = require('../controllers/blockfactoryController');
 
 project.get('/', function(req, res){
-
     Controller.blockFactory(req,res);
 });
 

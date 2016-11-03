@@ -71,6 +71,7 @@ function formatChange() {
   var mask = document.getElementById('blocklyMask');
   var languagePre = document.getElementById('languagePre');
   var languageTA = document.getElementById('languageTA');
+  //TODO Extract function
   if (document.getElementById('format').value == 'Manual') {
     Blockly.hideChaff();
     mask.style.display = 'block';
@@ -744,6 +745,8 @@ function updateVarsInGenerator(block, code){
     }
   }
 
+  //document.getElementById('codeWritingPre').innerHTML = code;
+
   return code;
 }
 
@@ -878,8 +881,6 @@ function injectCode(code, id) {
   code = pre.innerHTML;
   code = prettyPrintOne(code, 'js');
   pre.innerHTML = code;
-
-  alert(code);
 }
 
 /**

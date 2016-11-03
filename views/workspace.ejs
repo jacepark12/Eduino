@@ -49,7 +49,6 @@
       <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />실행하기</button>
       <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
       <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />저장하기</button>
-      <button class="button" style="float: left;"><br /><span id="statlabel">TEST</span></button>
     </div>
   </div>
 </div>
@@ -272,7 +271,7 @@
       xmlRequest.setRequestHeader("Cache-Control","no-cache, must-revalidate");
       xmlRequest.setRequestHeader("Pragma","no-cache");
       xmlRequest.send(params);
-    s}
+     }
 
     function loadCode(){
       console.log('loadCode function ');
@@ -289,14 +288,14 @@
       return e.childNodes[0].nodeValue;
     }
 
-    /*
+    /**
     sample of loading workspace
      var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
      Blockly.Xml.domToWorkspace(xml, workspace);
      alert('Load Source Code!');
      */
 
-    /*
+    /**
     sample of saving workspace
      var xml = Blockly.Xml.workspaceToDom(workspace);
      xml_text = Blockly.Xml.domToText(xml);
