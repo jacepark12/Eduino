@@ -15,7 +15,7 @@ module.exports = {
           if(err) throw err;
           console.log(doc);
 
-          res.render('projectlist', {name : email, projectArray : doc});
+          res.render('projects', {name : email, projectArray : doc});
       });
     }else{
       //TODO 404 페이지만들장
