@@ -36,6 +36,7 @@ app.use(session({
 }));
 
 app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 
 //console.log('__dirname : ');
 //using google-blockl
@@ -58,6 +59,10 @@ app.get('/', function(req, res){
 app.get('/test/blockly', function(req, res){
   //res.render(workspace,{'xml_text':});
 
+});
+
+app.get('/projects', function(req ,res){
+  res.render('projects.html');
 });
 
 app.get('*', function(req, res){
