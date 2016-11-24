@@ -1,0 +1,121 @@
+<!DOCTYPE HMTL>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/projects.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <img src="/img/logo/eduino.png" height="20px">
+
+        <ul>
+          <li class="activated"> PROJECTS </li>
+          <li> BLOCK STORE </li>
+        </ul>
+      </nav>
+
+      <div class="header-container">
+        <h1> <b>조동현</b>님의 Eduino Studio </h1>
+      </div>
+    </header>
+
+    <main>
+
+      <nav>
+
+        <ul>
+          <li class="activated"> 전체 </li>
+          <li> 아두이노 </li>
+          <li> 자바스크립트 </li>
+          <li> 파이썬 </li>
+        </ul>
+
+      </nav>
+
+      <div class="project-container">
+
+        <div class="card create-project">
+
+          <div class="text">
+
+            <i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
+            <h3> 프로젝트 추가하기 </h3>
+
+          </div>
+
+        </div>
+
+        <% for(var i in projectArray){ %>
+        <div class="project card" style="background-image: url('https://i.ytimg.com/vi/75bh3rZWTrs/hqdefault.jpg');">
+
+          <div class="gradient"> </div>
+
+          <div class="info">
+            <h3> <%= projectArray[i].projectname%> </h3>
+
+            <p> <%=projectArray[i].description%> </p>
+          </div>
+
+        </div>
+        <%}%>
+        <div class="project card" style="background-image: url('https://arduinomylifeup.com/wp-content/uploads/2015/07/Arduino-Traffic-Light.jpg');">
+
+          <div class="gradient"> </div>
+
+          <div class="info">
+            <h3> LED Tutorial </h3>
+
+            <p> LED를 처음 켜봤습니다! </p>
+          </div>
+
+        </div>
+
+        <div class="project card" style="background-image: url('http://www.robotgeek.com/Shared/images/temp/shotbot_9510.jpg');">
+
+          <div class="gradient"> </div>
+
+          <div class="info">
+            <h3> 아두이노 칵테일 제조기 </h3>
+
+            <p> 크 취해봅시다 </p>
+          </div>
+
+        </div>
+
+        <div class="project card">
+
+          <div class="gradient"> </div>
+
+          <div class="info">
+            <h3> TEST PROJECT </h3>
+
+            <p> TESTSTETS </p>
+          </div>
+
+        </div>
+
+        <div class="project card">
+
+          <div class="gradient"> </div>
+
+          <div class="info">
+            <h3> TEST PROJECT </h3>
+
+            <p> TESTSTETS </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>

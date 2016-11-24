@@ -41,8 +41,8 @@ h5 {
 
 .btn:hover, .btn:focus {
   color: #fff;
-  border-color: #FF5274;
-  background-color: #FF5274; }
+  border-color: #5dbdbd;
+  background-color: #5dbdbd; }
 
 .btn-white {
   font-size: 13px;
@@ -52,21 +52,21 @@ h5 {
   border-color: #fff; }
 
 .btn-white:hover, .btn-white:focus {
-  color: #FF5274;
-  border-color: #FF5274; }
+  color: #5dbdbd;
+  border-color: #5dbdbd; }
 
 .btn-fill {
   color: #fff;
-  border: solid 2px #FF5274;
+  border: solid 2px #5dbdbd;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #FF5274; }
+  background-color: #5dbdbd; }
 
 .btn-fill:hover, .btn-fill:focus {
   color: #fff;
-  background-color: #D7405D;
-  border-color: #D7405D; }
+  background-color: #5dbdbd;
+  border-color: #5dbdbd; }
 
 .btn-small {
   padding: 8px 40px; }
