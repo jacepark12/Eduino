@@ -48,7 +48,7 @@ user.get("/signin", function(req, res){
       res.redirect('/user/mypage');
   }
   else{
-    res.sendFile(path.resolve(__dirname + '/../public/signin.html'));
+    res.render('sign.html');
     //res.render(signin);
   }
 
