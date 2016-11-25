@@ -44,14 +44,14 @@ module.exports = {
     var email = req.body.email,
         password = req.body.password,
         passwordRepeat = req.body.passwordrepeat,
-        nickname = req.body.nickname;
+        name = req.body.name;
 
     if (validator.validate(email) && (password == passwordRepeat) && nickname != '' ) {
 
       var userData = {
         email: req.body.email,
         password: sha256(req.body.password),
-        nickname: req.body.nickname,
+        nickname: req.body.name,
         profile_image: ''
       }
 
