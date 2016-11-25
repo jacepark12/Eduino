@@ -53,65 +53,20 @@
         </div>
 
         <% for(var i in projectArray){ %>
-        <div class="project card" style="background-image: url('https://i.ytimg.com/vi/75bh3rZWTrs/hqdefault.jpg');">
+        <a href="./workspace/<%=projectArray[i].projectname%>">
+          <div class="project card">
 
-          <div class="gradient"> </div>
+            <div class="gradient"> </div>
 
-          <div class="info">
-            <h3> <%= projectArray[i].projectname%> </h3>
+            <div class="info">
+              <h3> <%= projectArray[i].projectname%> </h3>
 
-            <p> <%=projectArray[i].description%> </p>
+              <p> <%=projectArray[i].description%> </p>
+            </div>
+
           </div>
-
-        </div>
+        </a>
         <%}%>
-        <div class="project card" style="background-image: url('https://arduinomylifeup.com/wp-content/uploads/2015/07/Arduino-Traffic-Light.jpg');">
-
-          <div class="gradient"> </div>
-
-          <div class="info">
-            <h3> LED Tutorial </h3>
-
-            <p> LED를 처음 켜봤습니다! </p>
-          </div>
-
-        </div>
-
-        <div class="project card" style="background-image: url('http://www.robotgeek.com/Shared/images/temp/shotbot_9510.jpg');">
-
-          <div class="gradient"> </div>
-
-          <div class="info">
-            <h3> 아두이노 칵테일 제조기 </h3>
-
-            <p> 크 취해봅시다 </p>
-          </div>
-
-        </div>
-
-        <div class="project card">
-
-          <div class="gradient"> </div>
-
-          <div class="info">
-            <h3> TEST PROJECT </h3>
-
-            <p> TESTSTETS </p>
-          </div>
-
-        </div>
-
-        <div class="project card">
-
-          <div class="gradient"> </div>
-
-          <div class="info">
-            <h3> TEST PROJECT </h3>
-
-            <p> TESTSTETS </p>
-          </div>
-
-        </div>
 
       </div>
 
