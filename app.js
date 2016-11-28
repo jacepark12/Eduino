@@ -53,7 +53,15 @@ app.use('/blockfactory', blockfactory);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
-  res.render('mainpage',{'session': req.session});
+  if (req.session.email) {
+    console.log("logined");
+    res.send("<script> location.href='/project/list'; </script>")
+  }
+  else {
+    console.log("notlogined");
+    res.render('mainpage',{'session': req.session});
+
+  }
 });
 
 app.get('/test/blockly', function(req, res){
