@@ -8,8 +8,7 @@ module.exports = {
 
   projectList : function(req, res){
     var email = req.session.email;
-    //session 에 있는 아이디의 프로젝트를 불러와서 렌더해서 보내주는 부분을 만들려 합니다
-    //TODO session 이 없으면 로그인 페이지로 이동
+    //session 에 있는 아이디의 프로젝트를 불러와서 렌더해서 보내주는 부분을 만들려 합니다.
     if(email) {
       model.find({'owner' : email}, function(err, doc){
           if(err) throw err;
