@@ -1,5 +1,5 @@
 # Eduino
-Eduino - Web Online Arduino IDE
+Eduino - The Online Web Arduino IDE
 
 ###Welcome to Eduino
 
@@ -34,11 +34,15 @@ There are two editors in Eduino
 * ParkJaesung
  * Korea Digital Media High School
  
- * email : jspark141515@gmail.com
+ * Email : jspark141515@gmail.com
  
 * Kim Dongwoo
  * Korea Digital Media High School
- * email : andandend2847@gmail.com
+ * Email : andandend2847@gmail.com
+
+* Cho Donghyun
+ * Korea Digital Media High School
+ * Email : cdhnet98@gmail.com
 
 ###Develop Guide
 
