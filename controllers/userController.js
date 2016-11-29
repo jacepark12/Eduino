@@ -43,10 +43,10 @@ module.exports = {
 
     var email = req.body.email,
         password = req.body.password,
-        passwordRepeat = req.body.passwordrepeat,
-        name = req.body.name;
+        //passwordRepeat = req.body.passwordrepeat,
+        nickname = req.body.name;
 
-    if (validator.validate(email) && (password == passwordRepeat) && nickname != '' ) {
+    if (validator.validate(email) && nickname != '' ) {
 
       var userData = {
         email: req.body.email,
