@@ -48,7 +48,7 @@
       <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i><br />스크립트</button>
       <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />실행하기</button>
       <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
-      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />저장하기</button>
+      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br /><span id="statlabel">저장하기</span></button>
     </div>
   </div>
 </div>
@@ -263,7 +263,7 @@
         {
           msg = xmlRequest.responseText;
           //alert(msg);
-          document.getElementById('statlabel').innerHTML = msg;
+          document.getElementById('statlabel').innerHTML = "저장됨";
         }
       }
       xmlRequest.open("POST",'/project/workspace/<%= projectname%>',true);
@@ -279,7 +279,7 @@
       //var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
       var xml = Blockly.Xml.textToDom(htmlDecode('<%= projectxml%>'));
       Blockly.Xml.domToWorkspace(xml, workspace);
-      alert('Load Source Code!');
+      //alert('Load Source Code!');
     }
 
     function htmlDecode(input){
@@ -301,6 +301,14 @@
      xml_text = Blockly.Xml.domToText(xml);
      console.log(xml_text);
      */
+
+     function onFirstComment(event) {
+       document.getElementById('statlabel').innerHTML = "저장하기";
+       //TODO 자동저장, autosave
+       //saveCode();
+     }
+     workspace.addChangeListener(onFirstComment);
+
   </script>
   <script src="/js/dva.js"></script>
   <script src="https://use.fontawesome.com/19997febfc.js"></script>
