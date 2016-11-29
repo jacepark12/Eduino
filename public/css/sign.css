@@ -90,7 +90,7 @@ main {
   }
 
     .main-container nav .tab {
-      padding: 0; margin-right: 30px;
+      padding: 0 0 5px 0;  margin-right: 30px;
       color: rgba(255, 255, 255, .5);
       font-size:15pt;
       font-weight: 200;
