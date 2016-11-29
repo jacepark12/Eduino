@@ -40,18 +40,18 @@
       </nav>
 
       <div class="project-container">
+        <a href="/project/add">
 
-        <div class="card create-project">
+          <div class="card create-project">
 
-          <div class="text">
-
-            <i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
-            <h3> 프로젝트 추가하기 </h3>
+            <div class="text">
+              <i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
+              <h3> 프로젝트 추가하기 </h3>
+            </div>
 
           </div>
 
-        </div>
-
+        </a>
         <% for(var i in projectArray){ %>
         <a href="./workspace/<%=projectArray[i].projectname%>">
           <div class="project card">
