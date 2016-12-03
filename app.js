@@ -59,14 +59,9 @@ app.get('/', function(req, res){
   }
   else {
     console.log("notlogined");
-    res.render('mainpage',{'session': req.session});
+    res.render('index.html',{'session': req.session});
 
   }
-});
-
-app.get('/test/blockly', function(req, res){
-  //res.render(workspace,{'xml_text':});
-
 });
 
 app.get('/projects', function(req ,res){
