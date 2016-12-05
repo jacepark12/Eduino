@@ -1,316 +1,349 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <title>Eduino</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Eduino</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <script src="/js/blockly_compressed.js"></script>
+    <script src="/js/blockly_compressed.js"></script>
 
-  <script src="/js/blocks/colour.js"></script>
-  <script src="/js/blocks/gesture.js"></script>
-  <script src="/js/blocks/lists.js"></script>
-  <script src="/js/blocks/logic.js"></script>
-  <script src="/js/blocks/loops.js"></script>
-  <script src="/js/blocks/math.js"></script>
-  <script src="/js/blocks/procedures.js"></script>
-  <script src="/js/blocks/text.js"></script>
-  <script src="/js/blocks/variables.js"></script>
-  <script src="/js/blocks/voice.js"></script>
+    <script src="/js/blocks/colour.js"></script>
+    <script src="/js/blocks/gesture.js"></script>
+    <script src="/js/blocks/lists.js"></script>
+    <script src="/js/blocks/logic.js"></script>
+    <script src="/js/blocks/loops.js"></script>
+    <script src="/js/blocks/math.js"></script>
+    <script src="/js/blocks/procedures.js"></script>
+    <script src="/js/blocks/text.js"></script>
+    <script src="/js/blocks/variables.js"></script>
+    <script src="/js/blocks/voice.js"></script>
 
-  <script src="/js/javascript_compressed.js"></script>
+    <script src="/js/javascript_compressed.js"></script>
 
-  <script src="/js/msg/en.js"></script>
-  <link rel="stylesheet" href="/css/dva.css">
+    <script src="/js/msg/en.js"></script>
+    <link rel="stylesheet" href="/css/dva.css">
 
 </head>
 <body style="">
-  <!--<h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
-    <a href="../index.html">Demos</a> &gt; Generating JavaScript</h1>-->
+<!--<h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
+  <a href="../index.html">Demos</a> &gt; Generating JavaScript</h1>-->
 
-  <!--<p>This is a simple demo of generating code from blocks.</p>
+<!--<p>This is a simple demo of generating code from blocks.</p>
 
-  <p>&rarr; More info on <a href="https://developers.google.com/blockly/guides/configure/web/code-generators">Code Generators</a>&hellip;</p>-->
+<p>&rarr; More info on <a href="https://developers.google.com/blockly/guides/configure/web/code-generators">Code Generators</a>&hellip;</p>-->
 
 <div class="header">
-  <div class="user-info">
-  </div>
-  <div class="container">
+    <div class="user-info">
+    </div>
+    <div class="container">
     <span style="float: right; background-color: rgba(254, 254, 254, 0.9); display:inline-block;
     white-space: nowrap;
     overflow:hidden !important;
     text-overflow: ellipsis; width: calc(100% - 318px); text-align: right;">
     </span>
-    <div style="position: absolute;">
-      <button class="button go_back" style="float: left;"><i class="fa fa-2x fa-arrow-circle-o-left" aria-hidden="true"></i><br />뒤로가기</button>
-      <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i><br />스크립트</button>
-      <button class="button" onclick="runCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />실행하기</button>
-      <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br />불러오기</button>
-      <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i><br /><span id="statlabel">저장하기</span></button>
+        <div style="position: absolute;">
+            <button class="button go_back" style="float: left;"><i class="fa fa-2x fa-arrow-circle-o-left"
+                                                                   aria-hidden="true"></i><br/>뒤로가기
+            </button>
+            <button class="button" onclick="showCode();" style="float: left;"><i class="fa fa-file-o fa-2x"
+                                                                                 aria-hidden="true"></i><br/>스크립트
+            </button>
+            <button class="button" id="workspace_transition" style="float: left;"><i class="fa fa-2x fa-check-circle-o"
+                                                                               aria-hidden="true"></i><br/>실행하기
+            </button>
+            <button class="button" onclick="loadCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o"
+                                                                                aria-hidden="true"></i><br/>불러오기
+            </button>
+            <button class="button" onclick="saveCode()" style="float: left;"><i class="fa fa-2x fa-check-circle-o"
+                                                                                aria-hidden="true"></i><br/><span
+                        id="statlabel">저장하기</span></button>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="wrapper">
-  <div class="container">
-    <p>
-
-    </p>
-
-    <div id="blocklyDiv"></div>
-  </div>
+    <div class="container">
+        <p></p>
+        <div id="blocklyDiv"></div>
+    </div>
 </div>
 
-  <xml id="toolbox" style="display: none">
-    <!--<category name="Logic">-->
+<xml id="toolbox" style="display: none">
     <category name='만약에'>
 
-      <block type="controls_if"></block>
-      <block type="controls_if">
-        <mutation else="1"></mutation>
-      </block>
-      <block type="controls_if">
-        <mutation elseif="1" else="1"></mutation>
-      </block>
+        <block type="controls_if"></block>
+        <block type="controls_if">
+            <mutation else="1"></mutation>
+        </block>
+        <block type="controls_if">
+            <mutation elseif="1" else="1"></mutation>
+        </block>
     </category>
     <category name="조건">
-      <block type="logic_compare"></block>
-      <block type="logic_operation"></block>
-      <block type="logic_negate"></block>
-      <block type="logic_boolean"></block>
-      <block type="logic_null"></block>
-      <block type="logic_ternary"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+        <block type="logic_null"></block>
+        <block type="logic_ternary"></block>
     </category>
     <!--</category>-->
     <category name="반복">
-      <block type="controls_repeat_ext">
-        <value name="TIMES">
-          <block type="math_number">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-      </block>
-      <block type="controls_whileUntil"></block>
-      <block type="controls_for">
-        <field name="VAR">i</field>
-        <value name="FROM">
-          <block type="math_number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="TO">
-          <block type="math_number">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <value name="BY">
-          <block type="math_number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-      </block>
-      <block type="controls_forEach"></block>
-      <block type="controls_flow_statements"></block>
+        <block type="controls_repeat_ext">
+            <value name="TIMES">
+                <block type="math_number">
+                    <field name="NUM">10</field>
+                </block>
+            </value>
+        </block>
+        <block type="controls_whileUntil"></block>
+        <block type="controls_for">
+            <field name="VAR">i</field>
+            <value name="FROM">
+                <block type="math_number">
+                    <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="TO">
+                <block type="math_number">
+                    <field name="NUM">10</field>
+                </block>
+            </value>
+            <value name="BY">
+                <block type="math_number">
+                    <field name="NUM">1</field>
+                </block>
+            </value>
+        </block>
+        <block type="controls_forEach"></block>
+        <block type="controls_flow_statements"></block>
     </category>
     <category name="숫자연산">
-      <block type="math_number"></block>
-      <block type="math_arithmetic"></block>
-      <block type="math_single"></block>
-      <block type="math_trig"></block>
-      <block type="math_constant"></block>
-      <block type="math_number_property"></block>
-      <block type="math_round"></block>
-      <block type="math_on_list"></block>
-      <block type="math_modulo"></block>
-      <block type="math_constrain">
-        <value name="LOW">
-          <block type="math_number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="HIGH">
-          <block type="math_number">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-      </block>
-      <block type="math_random_int">
-        <value name="FROM">
-          <block type="math_number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="TO">
-          <block type="math_number">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-      </block>
-      <block type="math_random_float"></block>
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="math_single"></block>
+        <block type="math_trig"></block>
+        <block type="math_constant"></block>
+        <block type="math_number_property"></block>
+        <block type="math_round"></block>
+        <block type="math_on_list"></block>
+        <block type="math_modulo"></block>
+        <block type="math_constrain">
+            <value name="LOW">
+                <block type="math_number">
+                    <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="HIGH">
+                <block type="math_number">
+                    <field name="NUM">100</field>
+                </block>
+            </value>
+        </block>
+        <block type="math_random_int">
+            <value name="FROM">
+                <block type="math_number">
+                    <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="TO">
+                <block type="math_number">
+                    <field name="NUM">100</field>
+                </block>
+            </value>
+        </block>
+        <block type="math_random_float"></block>
     </category>
     <category name="리스트">
-      <block type="lists_create_empty"></block>
-      <block type="lists_create_with"></block>
-      <block type="lists_repeat">
-        <value name="NUM">
-          <block type="math_number">
-            <field name="NUM">5</field>
-          </block>
-        </value>
-      </block>
-      <block type="lists_length"></block>
-      <block type="lists_isEmpty"></block>
-      <block type="lists_indexOf"></block>
-      <block type="lists_getIndex"></block>
-      <block type="lists_setIndex"></block>
+        <block type="lists_create_empty"></block>
+        <block type="lists_create_with"></block>
+        <block type="lists_repeat">
+            <value name="NUM">
+                <block type="math_number">
+                    <field name="NUM">5</field>
+                </block>
+            </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_indexOf"></block>
+        <block type="lists_getIndex"></block>
+        <block type="lists_setIndex"></block>
     </category>
 
     <category name="글자들">
-      <block type ="text"></block>
-      <block type ="text_join"></block>
-      <block type ="text_create_join_container"></block>
-      <block type ="text_create_join_item"></block>
-      <block type ="text_append"></block>
-      <block type ="text_length"></block>
-      <block type ="text_isEmpty"></block>
-      <block type ="text_indexOf"></block>
-      <block type ="text_charAt"></block>
-      <block type ="text_getSubstring"></block>
-      <block type ="text_changeCase"></block>
-      <block type ="text_trim"></block>
-      <block type ="text_print"></block>
-      <block type ="text_prompt_ext"></block>
-      <block type ="text_prompt"></block>
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <block type="text_create_join_container"></block>
+        <block type="text_create_join_item"></block>
+        <block type="text_append"></block>
+        <block type="text_length"></block>
+        <block type="text_isEmpty"></block>
+        <block type="text_indexOf"></block>
+        <block type="text_charAt"></block>
+        <block type="text_getSubstring"></block>
+        <block type="text_changeCase"></block>
+        <block type="text_trim"></block>
+        <block type="text_print"></block>
+        <block type="text_prompt_ext"></block>
+        <block type="text_prompt"></block>
 
     </category>
     <category name="손동작">
-      <block type="gesture_wave_in_text"></block>
-      <block type="gesture_wave_out_text"></block>
-      <block type="gesture_fist_text"></block>
-      <block type="gesture_double_tap_text"></block>
-      <block type="gesture_get"></block>
+        <block type="gesture_wave_in_text"></block>
+        <block type="gesture_wave_out_text"></block>
+        <block type="gesture_fist_text"></block>
+        <block type="gesture_double_tap_text"></block>
+        <block type="gesture_get"></block>
     </category>
     <category name="목소리">
-      <block type="voice_input_get"></block>
-      <block type="voice_input_contains"></block>
-      <block type="voice_speak"></block>
+        <block type="voice_input_get"></block>
+        <block type="voice_input_contains"></block>
+        <block type="voice_speak"></block>
     </category>
     <category name="변수" custom="VARIABLE"></category>
     <category name="함수" custom="PROCEDURE"></category>
     <sep></sep>
-  </xml>
-  </xml>
+</xml>
+</xml>
 
- <!-- 이 아래쪽에(startBlocks) xml 안쪽에 xml_text를 넣어주면 이전 블록이 불러와짐...! -->
-  <xml id="startBlocks" style="display: none">
-<!--    <%= projectxml %> -->
-  </xml>
-  <script>
+<!-- 이 아래쪽에(startBlocks) xml 안쪽에 xml_text를 넣어주면 이전 블록이 불러와짐...! -->
+<xml id="startBlocks" style="display: none">
+    <!--    <%= projectxml %> -->
+</xml>
+<script src="/js/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="/js/workspace.js"></script>-->
+<script>
+    $(document).ready(function () {
+        initBlocks();
+    });
 
+    var workspace;
     var xml_text;
 
-    var workspace = Blockly.inject('blocklyDiv',
-        {media: '../../media/',
-         toolbox: document.getElementById('toolbox')});
-    Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
-                               workspace);
+function initBlocks() {
+     //editor가 있었던 blocklyDiv를 제거했다가 다시 요소할당
+     $('#blocklyDiv').remove();
+     $('.wrapper').find('.container').append("<div id='blocklyDiv'></div>");
 
-    loadCode();
+      workspace = Blockly.inject('blocklyDiv',
+                {
+                    media: '../../media/',
+                    toolbox: document.getElementById('toolbox')
+                });
+        Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
+                workspace);
 
+        loadCode();
+        workspace.addChangeListener(onFirstComment);
+
+    //set event handling for the editor transition button
+    $('#workspace_transition').click(function(){
+        runCode();
+    });
+    }
     function showCode() {
-      // Generate JavaScript code and display it.
-      Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
-      var code = Blockly.JavaScript.workspaceToCode(workspace);
-      alert(code);
+        // Generate JavaScript code and display it.
+        Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+        var code = Blockly.JavaScript.workspaceToCode(workspace);
+        alert(code);
 
-      }
+    }
 
     function runCode() {
-      // Generate JavaScript code and run it.
-      window.LoopTrap = 1000;
-      Blockly.JavaScript.INFINITE_LOOP_TRAP =
-          'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
-      var code = Blockly.JavaScript.workspaceToCode(workspace);
-      Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
-      try {
-        eval(code);
-      } catch (e) {
-        alert(e);
-      }
-    }
-
-    function saveCode(){
-      var xml = Blockly.Xml.workspaceToDom(workspace);
-      xml_text = Blockly.Xml.domToText(xml);
-
-      var xmlRequest;
-      var params = 'xml=' + xml_text;
-
-      if (window.XMLHttpRequest)
-      {// code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlRequest=new XMLHttpRequest();
-      }
-      else
-      {// code for IE6, IE5
-        xmlRequest=new ActiveXObject("Microsoft.XMLHTTP");
-      }
-
-      xmlRequest.onreadystatechange=function()
-      {
-        if (xmlRequest.readyState==4 && xmlRequest.status==200)
-        {
-          msg = xmlRequest.responseText;
-          //alert(msg);
-          document.getElementById('statlabel').innerHTML = "저장됨";
+        // Generate JavaScript code and run it.
+        window.LoopTrap = 1000;
+        Blockly.JavaScript.INFINITE_LOOP_TRAP =
+                'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
+        var code = Blockly.JavaScript.workspaceToCode(workspace);
+        Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+        try {
+            eval(code);
+        } catch (e) {
+            alert(e);
         }
-      }
-      xmlRequest.open("POST",'/project/workspace/<%= projectname%>',true);
-      xmlRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
-      xmlRequest.setRequestHeader("Cache-Control","no-cache, must-revalidate");
-      xmlRequest.setRequestHeader("Pragma","no-cache");
-      xmlRequest.send(params);
-     }
 
-    function loadCode(){
-      console.log('loadCode function ');
-      console.log('<%= projectxml%>')
-      //var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
-      var xml = Blockly.Xml.textToDom(htmlDecode('<%= projectxml%>'));
-      Blockly.Xml.domToWorkspace(xml, workspace);
-      //alert('Load Source Code!');
+        initEditor(code);
     }
 
-    function htmlDecode(input){
-      var e = document.createElement('div');
-      e.innerHTML = input;
-      return e.childNodes[0].nodeValue;
+    function initEditor(code) {
+        var editor = ace.edit("blocklyDiv");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/javascript");
+        editor.setValue(code);
+
+        //workspace_transition button에 initBlocks() 함수 이벤트 설정
+        $('#workspace_transition').click(function(){
+           initBlocks();
+        });
+    }
+
+    function saveCode() {
+        var xml = Blockly.Xml.workspaceToDom(workspace);
+        xml_text = Blockly.Xml.domToText(xml);
+
+        var xmlRequest;
+        var params = 'xml=' + xml_text;
+
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlRequest = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlRequest.onreadystatechange = function () {
+            if (xmlRequest.readyState == 4 && xmlRequest.status == 200) {
+                msg = xmlRequest.responseText;
+                //alert(msg);
+                document.getElementById('statlabel').innerHTML = "저장됨";
+            }
+        }
+        xmlRequest.open("POST", '/project/workspace/<%= projectname %>', true);
+        xmlRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+        xmlRequest.setRequestHeader("Cache-Control", "no-cache, must-revalidate");
+        xmlRequest.setRequestHeader("Pragma", "no-cache");
+        xmlRequest.send(params);
+    }
+
+    function loadCode() {
+        console.log('loadCode function ');
+        console.log('<%= projectxml %>')
+        var xml = Blockly.Xml.textToDom(htmlDecode('<%= projectxml %>'));
+        Blockly.Xml.domToWorkspace(xml, workspace);
+    }
+
+    function htmlDecode(input) {
+        var e = document.createElement('div');
+        e.innerHTML = input;
+        return e.childNodes[0].nodeValue;
     }
 
     /**
-    sample of loading workspace
+     sample of loading workspace
      var xml = Blockly.Xml.textToDom('<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="[W2ba[1axfs/Z,gzSg`[" x="183" y="188"></block></xml>');
      Blockly.Xml.domToWorkspace(xml, workspace);
      alert('Load Source Code!');
      */
 
     /**
-    sample of saving workspace
+     sample of saving workspace
      var xml = Blockly.Xml.workspaceToDom(workspace);
      xml_text = Blockly.Xml.domToText(xml);
      console.log(xml_text);
      */
 
-     function onFirstComment(event) {
-       document.getElementById('statlabel').innerHTML = "저장하기";
-       //TODO 자동저장, autosave
-       //saveCode();
-     }
-     workspace.addChangeListener(onFirstComment);
+    function onFirstComment(event) {
+        document.getElementById('statlabel').innerHTML = "저장하기";
+        //TODO 자동저장, autosave
+        //saveCode();
+    }
 
-  </script>
-  <script src="/js/dva.js"></script>
-  <script src="https://use.fontawesome.com/19997febfc.js"></script>
+</script>
+<script src="/js/dva.js"></script>
+<script src="https://use.fontawesome.com/19997febfc.js"></script>
 </body>
 </html>

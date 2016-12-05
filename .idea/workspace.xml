@@ -2,13 +2,353 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef90b05-72f4-4017-816b-7a488d9e8d7f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-beautify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-chromevox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-elastic_tabstops_lite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-emmet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-error_marker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-keybinding_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-language_tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-linking.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-modelist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-old_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-searchbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-settings_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-spellcheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-split.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-static_highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-statusbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-themelist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/ext-whitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/keybinding-emacs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/keybinding-vim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-abap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-abc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-actionscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ada.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-apache_conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-applescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-asciidoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-assembly_x86.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-autohotkey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-batchfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-c9search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-c_cpp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-cirru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-coldfusion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-csharp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-curly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-dockerfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-dot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-drools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ejs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-elixir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-elm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-forth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-fortran.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ftl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-gcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-gitignore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-glsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-gobstones.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-golang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-haskell_cabal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-html_elixir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-html_ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-jack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-java.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-jsoniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-jsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-jsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-kotlin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-lean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-liquid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-live_script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-logiql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-lsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-luapage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-lucene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-makefile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-maze.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mips_assembler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mipsassembler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mushcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-mysql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-nix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-nsis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-objectivec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ocaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-pgsql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-plain_text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-powershell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-praat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-prolog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-protobuf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-razor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-rdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-rhtml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-rst.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-scad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-scss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-sh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-sjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-snippets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-soy_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-space.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-sqlserver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-svg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-swift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-swig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-tsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-twig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-typescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-vala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-wollok.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/mode-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/abap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/abc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/actionscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ada.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/apache_conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/applescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/asciidoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/assembly_x86.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/autohotkey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/batchfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/c9search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/c_cpp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/cirru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/coldfusion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/csharp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/curly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/dockerfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/dot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/drools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ejs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/elixir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/elm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/forth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/fortran.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ftl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/gcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/gitignore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/glsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/gobstones.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/golang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/haskell_cabal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/html_elixir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/html_ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/jack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/java.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/jsoniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/jsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/jsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/kotlin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/lean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/liquid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/live_script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/logiql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/lsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/luapage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/lucene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/makefile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/maze.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mips_assembler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mipsassembler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mushcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/mysql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/nix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/nsis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/objectivec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ocaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/pgsql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/plain_text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/powershell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/praat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/prolog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/protobuf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/razor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/rdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/rhtml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/rst.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/scad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/scss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/sh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/sjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/snippets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/soy_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/space.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/sqlserver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/svg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/swift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/swig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/tsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/twig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/typescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/wollok.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-ambiance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-chaos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-chrome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-clouds.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-clouds_midnight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-cobalt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-crimson_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-dawn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-dreamweaver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-eclipse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-github.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-idle_fingers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-iplastic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-katzenmilch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-kr_theme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-kuroir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-merbivore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-merbivore_soft.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-mono_industrial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-monokai.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-pastel_on_dark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-solarized_dark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-solarized_light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-sqlserver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-terminal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-textmate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_bright.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_eighties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-twilight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-vibrant_ink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-xcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/workspace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/blockfactoryController.js" afterPath="$PROJECT_DIR$/controllers/blockfactoryController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/blockfactory.css" afterPath="$PROJECT_DIR$/public/css/blockfactory.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/factory.js" afterPath="$PROJECT_DIR$/public/js/factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routers/blockfactory.js" afterPath="$PROJECT_DIR$/routers/blockfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blockfactory.ejs" afterPath="$PROJECT_DIR$/views/blockfactory.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/workspace.ejs" afterPath="$PROJECT_DIR$/views/workspace.ejs" />
     </list>
     <ignored path="Eduino.iws" />
@@ -34,11 +374,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="factory.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="workspace.ejs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/workspace.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-326">
+                  <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+                  <folding>
+                    <element signature="n#style#0;n#button#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="factory.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/factory.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="949" column="0" selection-start-line="949" selection-start-column="0" selection-end-line="949" selection-end-column="0" />
+                <state relative-caret-position="381">
+                  <caret line="927" column="0" selection-start-line="927" selection-start-column="0" selection-end-line="927" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -47,7 +399,7 @@
           <file leaf-file-name="blockModel.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/blockModel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
+                <state relative-caret-position="120">
                   <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#51#0" expanded="false" />
@@ -59,8 +411,8 @@
           <file leaf-file-name="projectController.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/projectController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                <state relative-caret-position="336">
+                  <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +421,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/google-blockly/demos/blockfactory/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="87">
+                <state relative-caret-position="144">
                   <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
                   <folding />
                 </state>
@@ -79,7 +431,7 @@
           <file leaf-file-name="userController.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/userController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
+                <state relative-caret-position="192">
                   <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
                   <folding />
                 </state>
@@ -90,93 +442,93 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="workspace.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="workspace.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/workspace.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+                <state relative-caret-position="590">
+                  <caret line="245" column="7" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="blockfactory.ejs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/blockfactory.ejs">
+          <file leaf-file-name="workspace.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/workspace.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4153">
-                  <caret line="151" column="7" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="blockfactory.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/css/blockfactory.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1140">
-                  <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="project.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routers/project.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="blockfactory.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routers/blockfactory.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+                <state relative-caret-position="48">
+                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="110" selection-end-column="44" />
                   <folding>
-                    <element signature="e#0#51#0" expanded="false" />
+                    <element signature="e#0#50#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="blockfactoryController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/blockfactoryController.js">
+          <file leaf-file-name="xml.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xml.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.js">
+          <file leaf-file-name="xquery.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xquery.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="projectController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/projectController.js">
+          <file leaf-file-name="yaml.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/yaml.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="projectModel.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/projectModel.js">
+          <file leaf-file-name="abap.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/abap.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="worker-php.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-php.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="worker-xml.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xml.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="worker-xquery.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xquery.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -222,10 +574,12 @@
         <option value="$PROJECT_DIR$/routers/blockfactory.js" />
         <option value="$PROJECT_DIR$/controllers/blockfactoryController.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/workspace.ejs" />
         <option value="$PROJECT_DIR$/views/blockfactory.ejs" />
         <option value="$PROJECT_DIR$/public/css/blockfactory.css" />
         <option value="$PROJECT_DIR$/public/js/factory.js" />
+        <option value="$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/abap.js" />
+        <option value="$PROJECT_DIR$/public/js/workspace.js" />
+        <option value="$PROJECT_DIR$/views/workspace.ejs" />
       </list>
     </option>
   </component>
@@ -269,70 +623,6 @@
     <panes>
       <pane id="Scratches">
         <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Eduino">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Eduino">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Eduino">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="routers">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Eduino">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controllers">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -422,120 +712,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-blockly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-blockly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-blockly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocklyfactory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-blockly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blockfactory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eduino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Eduino">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Eduino">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Eduino">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="routers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Eduino">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -547,7 +789,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/app.js&#10;work&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/workspace.ejs&#10;block&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/blockfactory.ejs&#10;blc&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/blockfactoryController.js&#10;fac&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/js/factory.js&#10;bl&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/blockfactory.js&#10;pre&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/css/prettify.css&#10;pretti&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/js/prettify.js&#10;blockM&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/models/blockModel.js&#10;blockC&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/blockfactoryController.js&#10;prettify&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/google-blockly/demos/prettify.css&#10;project&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/project.js&#10;storage.js&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/google-blockly/appengine/storage.js&#10;worksp&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/workspace.ejs&#10;projectlist&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/projectlist.ejs&#10;app.js&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/app.js&#10;w&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/workspace.ejs&#10;UserCOn&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/userController.js&#10;user&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/user.js&#10;use&#9;FILE&#9;file:///Users/parkjaesung/Documents/Github/Eduino/Eduino/routers/user.js" />
+    <property name="SearchEverywhereHistoryKey" value="workspace.ejs&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/views/workspace.ejs&#10;wo&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/public/js/workspace.js&#10;w&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/views/workspace.ejs&#10;app&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/app.js&#10;work&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/workspace.ejs&#10;block&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/blockfactory.ejs&#10;blc&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/blockfactoryController.js&#10;fac&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/js/factory.js&#10;bl&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/blockfactory.js&#10;pre&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/css/prettify.css&#10;pretti&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/public/js/prettify.js&#10;blockM&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/models/blockModel.js&#10;blockC&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/blockfactoryController.js&#10;prettify&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/google-blockly/demos/prettify.css&#10;project&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/project.js&#10;storage.js&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/google-blockly/appengine/storage.js&#10;worksp&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/workspace.ejs&#10;projectlist&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/views/projectlist.ejs&#10;app.js&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/app.js&#10;UserCOn&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/controllers/userController.js&#10;user&#9;FILE&#9;file:///Users/parkjaesung/Documents/workspace/Github/Eduino/Eduino/routers/user.js&#10;use&#9;FILE&#9;file:///Users/parkjaesung/Documents/Github/Eduino/Eduino/routers/user.js" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -556,11 +798,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/ace-builds" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/js/msg" />
-      <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Eduino">
@@ -662,11 +904,14 @@
       <workItem from="1477901451482" duration="1333000" />
       <workItem from="1478155905520" duration="242000" />
       <workItem from="1478156394638" duration="346000" />
+      <workItem from="1480767721837" duration="1437000" />
+      <workItem from="1480847837210" duration="811000" />
+      <workItem from="1480913634694" duration="2048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37228000" />
+    <option name="totallyTimeSpent" value="41524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -675,8 +920,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.73015875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2015625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28100607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.2527646" sideWeight="0.26984128" order="2" side_tool="true" content_ui="tabs" />
@@ -726,342 +971,371 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/contentController.js" />
-    <entry file="file://$PROJECT_DIR$/google-blockly/demos/index.html">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-github.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/index.html" />
-    <entry file="file://$PROJECT_DIR$/models/userModel.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-idle_fingers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/demos/generator/index.html" />
-    <entry file="file://$PROJECT_DIR$/google-blockly/blockly_compressed.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-iplastic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/msg/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="361" column="26" selection-start-line="361" selection-start-column="26" selection-end-line="361" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/block/colour.js" />
-    <entry file="file://$PROJECT_DIR$/google-blockly/msg/js/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4815">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/media/sprites.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/blockly_uncompressed.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-katzenmilch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/list.html" />
-    <entry file="file://$PROJECT_DIR$/public/js/blockly_compressed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8175">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/background.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/lua_compressed.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-kr_theme.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/projectlist.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dva.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/appengine/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2046">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/msg/messages.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-kuroir.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/demos/blockfactory/blocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/blocks.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-merbivore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dva.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/demos/prettify.css">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-merbivore_soft.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/grid.min.css">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-mono_industrial.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/mypage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/createProject.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="186" column="3" selection-start-line="186" selection-start-column="3" selection-end-line="186" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/signup_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/indexx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/signin.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/javascript_compressed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="122" selection-start-line="17" selection-start-column="122" selection-end-line="17" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="931" column="46" selection-start-line="931" selection-start-column="46" selection-end-line="931" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/prettify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="241" selection-start-line="17" selection-start-column="236" selection-end-line="17" selection-end-column="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/prettify.css">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-monokai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="140" selection-start-line="0" selection-start-column="139" selection-end-line="0" selection-end-column="140" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/userController.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-pastel_on_dark.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-solarized_dark.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-solarized_light.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-sqlserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-terminal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-textmate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_blue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_bright.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-tomorrow_night_eighties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-twilight.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-vibrant_ink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/theme-xcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/toml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/tsx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/twig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/typescript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vala.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vbscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/velocity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/verilog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/vhdl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/wollok.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-coffee.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-css.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-html.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-lua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-php.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/project.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xml.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/projectModel.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/worker-xquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/blockModel.js">
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xml.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/xquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/yaml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ace-builds/src-min-noconflict/snippets/abap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/workspace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="110" selection-end-column="44" />
           <folding>
-            <element signature="e#0#51#0" expanded="false" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/workspace.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/projectController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/blockfactoryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routers/blockfactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/blockfactory.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/blockfactory.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4153">
-          <caret line="151" column="7" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-blockly/demos/blockfactory/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="949" column="0" selection-start-line="949" selection-start-column="0" selection-end-line="949" selection-end-column="0" />
+        <state relative-caret-position="381">
+          <caret line="927" column="0" selection-start-line="927" selection-start-column="0" selection-end-line="927" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/workspace.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="245" column="7" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
           <folding />
         </state>
       </provider>
