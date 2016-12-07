@@ -223,11 +223,20 @@
 
     var workspace;
     var xml_text;
+    var editor;
 
 function initBlocks() {
      //editor가 있었던 blocklyDiv를 제거했다가 다시 요소할당
+    if(editor !=null){
+        console.log('removing ace editor');
+        editor.container.remove();
+        editor.destroy();
+        editor = null;
+    }
+
      $('#blocklyDiv').remove();
      $('.wrapper').find('.container').append("<div id='blocklyDiv'></div>");
+
 
       workspace = Blockly.inject('blocklyDiv',
                 {
@@ -240,6 +249,8 @@ function initBlocks() {
         loadCode();
         workspace.addChangeListener(onFirstComment);
 
+    //unbind event handler
+    $('#workspace_transition').off('click');
     //set event handling for the editor transition button
     $('#workspace_transition').click(function(){
         runCode();
@@ -270,15 +281,19 @@ function initBlocks() {
     }
 
     function initEditor(code) {
-        var editor = ace.edit("blocklyDiv");
+        editor = ace.edit("blocklyDiv");
         editor.setTheme("ace/theme/monokai");
         editor.getSession().setMode("ace/mode/javascript");
         editor.setValue(code);
 
+        //unbind event handler
+        $('#workspace_transition').off('click');
+        
         //workspace_transition button에 initBlocks() 함수 이벤트 설정
         $('#workspace_transition').click(function(){
            initBlocks();
         });
+
     }
 
     function saveCode() {
