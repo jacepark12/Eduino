@@ -1,0 +1,66 @@
+#sidebar-wrapper, #content-wrapper {
+    float: left;
+    height: 100%;
+}
+#sidebar-wrapper {
+    position: fixed;
+    background-color: #ffffff;
+    width: 220px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+#sidebar-wrapper .sidebar-content {
+    padding: 10px 25px;
+}
+#sidebar-wrapper .sidebar-content li {
+    padding: 10px 0;
+}
+#sidebar-wrapper .sidebar-content li a {
+    color: #c8c8c8;
+}
+#sidebar-wrapper .sidebar-content li a:hover,
+#sidebar-wrapper .sidebar-content li a:active,
+#sidebar-wrapper .sidebar-content li a:focus,
+#sidebar-wrapper .sidebar-content li a.active {
+    color: #333;
+    text-decoration: none;
+}
+#sidebar-wrapper .sidebar-content li a i {
+    width: 25px;
+}
+#sidebar-wrapper .sidebar-content li a:hover i,
+#sidebar-wrapper .sidebar-content li a:active i,
+#sidebar-wrapper .sidebar-content li a:focus i,
+#sidebar-wrapper .sidebar-content li a.active i {
+    color: #00ABA9;
+}
+
+#content-wrapper {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+}
+#content-wrapper nav {
+    border-radius: 0;
+}
+#content-wrapper .content {
+    padding: 10px 25px;
+}
+
+.navbar-default{
+    background-color: #00ABA9;
+}
+
+#navbar{
+    background-color: #00ABA9;
+}
+
+#sidebar-nav{
+    background-color: #00ABA9;
+}
+
+/*
+TODO CSS 분리
+*/
+.navbar-default .navbar-nav > li > a.btn-primary-outline {
+    color: #FFFFFf;
+}

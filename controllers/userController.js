@@ -24,11 +24,7 @@ module.exports = {
       if (user) {
 
         req.session.email = email;
-        //res.send("<script> location.href = '" + req.body.url + "' </script>");
-        //res.send(req.session);
-        //res.redirect("/user/mypage");
         res.redirect("/");
-        //res.send("<script>history.back(); </script>");
         //아무래도 로그인 되면 이전 페이지로 보내주는게 맞는것같음. 한번 생각해보죠. 근데 첫 로그인시엔 마이페이지로 가야되는데,
         //어떤 작업하다가 로그인하러오면 로그인 하기 전 페이지로 가야하지않나?
       } else {

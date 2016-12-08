@@ -54,7 +54,7 @@ form {
   }
 
 body {
-  background-color: rgba(0,0,0, 1);
+  background-color: rgba(0,0,0,1);
 }
 
 button {
@@ -62,19 +62,9 @@ button {
 }
 
 main {
+  width: 100%;
   height: 100%;
-  background: #67B26F;
-  background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd);
-  background: linear-gradient(to left, rgba(103, 178, 111, 0.5) , rgba(76, 162, 205, 0.5));
 }
-
-.logo-container {
-  text-align: center;
-}
-
-  .logo-container img {
-    width: 300px;
-  }
 
 .main-container {
   position: absolute;
@@ -84,66 +74,82 @@ main {
   overflow: hidden;
 }
 
-  .main-container nav {
-    padding: 60px 15px 80px 15px;
-    box-sizing: border-box;
-  }
 
-    .main-container nav .tab {
-      padding: 0 0 5px 0;  margin-right: 30px;
-      color: rgba(255, 255, 255, .5);
-      font-size:15pt;
-      font-weight: 200;
-      background-color: transparent;
-      border: none;
-      transition: color 0.3s;
-    }
+.main-container nav {
+  padding: 60px 15px 80px 15px;
+  box-sizing: border-box;
+}
 
-    .main-container nav .tab.activated {
-      border-bottom: 2px solid #00ABA9;
-      color: white;
-    }
+.main-container nav .tab {
+  padding: 0 0 5px 0;  margin-right: 30px;
+  color: rgba(255, 255, 255, .5);
+  font-size:15pt;
+  font-weight: 200;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s;
+}
 
-    .main-container nav .tab:hover {
-      color: rgba(255, 255, 255, 1);
-    }
+.main-container nav .tab.activated {
+  border-bottom: 2px solid #00ABA9;
+  color: white;
+}
 
-  .main-container .form-container {
-    position: relative;
-    left: 0;
-  }
+.main-container nav .tab:hover {
+  color: rgba(255, 255, 255, 1);
+}
 
-    .main-container .form-container .signin-form {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      display: inline-block;
-    }
+.main-container .form-container {
+  position: relative;
+  left: 0;
+}
 
-    .main-container .form-container .signup-form {
-      position: absolute;
-      left: 400px;
-      width: 100%;
-      display: inline-block;
-    }
+.main-container .form-container .signin-form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+}
 
-  .divider {
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    margin: 70px 0 40px 0;
-  }
+.main-container .form-container .signup-form {
+  position: absolute;
+  left: 400px;
+  width: 100%;
+  display: inline-block;
+}
 
-  .forgot {
-    text-align: center;
-    font-size: 10pt;
-    font-weight: 200;
-  }
+.divider {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  margin: 70px 0 40px 0;
+}
 
-    .forgot a {
-      color: rgba(255, 255, 255, 0.5);
-      text-decoration: none;
-      transition: all 0.3s;
-    }
+.forgot {
+  text-align: center;
+  font-size: 10pt;
+  font-weight: 200;
+}
 
-    .forgot a:hover {
-      color: rgba(255, 255, 255, 1);
-    }
+.forgot a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.forgot a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#signin {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-codebakery2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+

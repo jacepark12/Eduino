@@ -1,42 +1,55 @@
-<!DOCTYPE HMTL>
+<!DOCTYPE html>
 
 <html>
   <head>
     <meta charset="utf-8">
 
+    <link rel="stylesheet" href="/css/FakeLoader.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/js/fakeLoader.min.js"></script>
   </head>
 
   <body>
-
+  <div class="loader">
+  </div>
     <header>
-      <nav>
-        <img src="/img/logo/eduino.png" height="20px">
-
-        <ul>
-          <li class="activated"> PROJECTS </li>
-          <li> BLOCK STORE </li>
-        </ul>
-      </nav>
-
-      <div class="header-container">
-        <h1> <b><%=name%></b>님의 Eduino Studio </h1>
-      </div>
+      <aside id="sidebar-wrapper">
+        <nav class="navbar navbar-default">
+          <div id="sidebar-nav" class="collapse navbar-collapse text-center">
+            <a class="navbar-brand" href="#"><img src="/img/logo/eduino.png" height="20px"></a>
+          </div>
+        </nav>
+        <div class="sidebar-content">
+          <ul class="list-unstyled">
+            <li><a href="#" class="actived"><i class="fa fa-list"></i> Projects</a></li>
+            <li><a href="#"><i class="fa fa-line-chart"></i> Block Store</a></li>
+            <li><a href="#"><i class="fa fa-comments-o"></i> 오류 신고 & 피드백</a></li>
+          </ul>
+        </div>
+      </aside>
     </header>
-
+    <div id="content-wrapper">
+      <nav class="navbar navbar-default">
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-primary-outline" href="/users/signout">로그아웃</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="content">
     <main>
-
       <nav>
-
         <ul>
           <li class="activated"> 전체 </li>
           <li> 아두이노 </li>
           <li> 자바스크립트 </li>
           <li> 파이썬 </li>
         </ul>
-
       </nav>
 
       <div class="project-container">
@@ -71,6 +84,7 @@
       </div>
 
     </main>
-
+  </div>
+      </div>
   </body>
 </html>
