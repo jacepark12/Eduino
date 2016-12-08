@@ -17,7 +17,7 @@ h1 {
 body {
   background-color: #FAFAFC;
 }
-
+/*
 header {
   background-color: #23293A;
   padding: 30px 0;
@@ -69,7 +69,7 @@ header {
       header .header-container h1 b {
         font-weight: 500;
       }
-
+*/
 main {
   max-width: 1052px;
   margin: 0 auto;
@@ -99,7 +99,7 @@ main {
       }
 
       main nav ul li.activated {
-        border-bottom: 2px solid #FF0069;
+        border-bottom: 2px solid #00ABA9;
         font-weight: 700;
       }
 
