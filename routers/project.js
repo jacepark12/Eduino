@@ -24,7 +24,7 @@ project.get('/add', function(req, res){
   }
   else { //세션이 없는경우
     //TODO 로그인해달라고 alert 하고, 로그인 창으로 리다이렉팅하기
-    res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>")
+    res.send("<script> alert('로그인을 해주시기 바랍니다.'); location.href='/user/signin'; </script>");
   }
 });
 

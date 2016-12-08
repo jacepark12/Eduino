@@ -63,10 +63,15 @@ var block_javascript_code = '';
   return code;
 };
  */
-var generator_javascript_code ='';
+var generator;
 /**
  * Change the language code format.
  */
+
+//TODO REMOVE test code
+//set style
+var codeEdit = document.getElementById('codeEdit');
+
 function formatChange() {
   var mask = document.getElementById('blocklyMask');
   var languagePre = document.getElementById('languagePre');
@@ -88,6 +93,17 @@ function formatChange() {
     updateLanguage();
   }
   disableEnableLink();
+}
+
+/**
+ * Method for drop down 'variables'
+ * insert selected variable to codeEdit textArea
+ */
+function insert_var(){
+  var codeEdit = document.getElementById('codeEdit');
+  var variables = document.getElementById('variables');
+
+  codeEdit.textContent += '\n' + variables.value;
 }
 
 /**
@@ -605,61 +621,6 @@ function updateGenerator(block) {
   var code = [];
   code.push("Blockly." + language + "['" + block.type +
             "'] = function(block) {");
-
-  // Generate getters for any fields or inputs.
-  /*
-  for (var i = 0, input; input = block.inputList[i]; i++) {
-    for (var j = 0, field; field = input.fieldRow[j]; j++) {
-      var name = field.name;
-      if (!name) {
-        continue;
-      }
-      if (field instanceof Blockly.FieldVariable) {
-        // Subclass of Blockly.FieldDropdown, must test first.
-        code.push(makeVar('variable', name) +
-                  " = Blockly." + language +
-                  ".variableDB_.getName(block.getFieldValue('" + name +
-                  "'), Blockly.Variables.NAME_TYPE);");
-      } else if (field instanceof Blockly.FieldAngle) {
-        // Subclass of Blockly.FieldTextInput, must test first.
-        code.push(makeVar('angle', name) +
-                  " = block.getFieldValue('" + name + "');");
-      } else if (Blockly.FieldDate && field instanceof Blockly.FieldDate) {
-        // Blockly.FieldDate may not be compiled into Blockly.
-        code.push(makeVar('date', name) +
-                  " = block.getFieldValue('" + name + "');");
-      } else if (field instanceof Blockly.FieldColour) {
-        code.push(makeVar('colour', name) +
-                  " = block.getFieldValue('" + name + "');");
-      } else if (field instanceof Blockly.FieldCheckbox) {
-        code.push(makeVar('checkbox', name) +
-                  " = block.getFieldValue('" + name + "') == 'TRUE';");
-      } else if (field instanceof Blockly.FieldDropdown) {
-        code.push(makeVar('dropdown', name) +
-                  " = block.getFieldValue('" + name + "');");
-      } else if (field instanceof Blockly.FieldNumber) {
-        code.push(makeVar('number', name) +
-                  " = block.getFieldValue('" + name + "');");
-      } else if (field instanceof Blockly.FieldTextInput) {
-        code.push(makeVar('text', name) +
-                  " = block.getFieldValue('" + name + "');");
-      }
-    }
-
-    var name = input.name;
-    if (name) {
-      if (input.type == Blockly.INPUT_VALUE) {
-        code.push(makeVar('value', name) +
-                  " = Blockly." + language + ".valueToCode(block, '" + name +
-                  "', Blockly." + language + ".ORDER_ATOMIC);");
-      } else if (input.type == Blockly.NEXT_STATEMENT) {
-        code.push(makeVar('statements', name) +
-                  " = Blockly." + language + ".statementToCode(block, '" +
-                  name + "');");
-      }
-    }
-  }
-  */
   code = updateVarsInGenerator(block, code);
 
   // Most languages end lines with a semicolon.  Python does not.
@@ -681,6 +642,7 @@ function updateGenerator(block) {
   code.push("};");
 
   injectCode(code.join('\n'), 'generatorPre');
+  generator = code.join('\n');
 }
 
 /**
@@ -734,6 +696,16 @@ function updateVarsInGenerator(block, code){
     var name = input.name;
     if (name) {
       if (input.type == Blockly.INPUT_VALUE) {
+
+        //TODO Remove test code
+        //add to 'variable' select
+        var variable = document.createElement('option');
+        variable.text= makeVar('variable', name);
+        variable.value= makeVar('variable', name);
+
+        document.getElementById('variables').appendChild(variable);
+
+
         code.push(makeVar('value', name) +
             " = Blockly." + language + ".valueToCode(block, '" + name +
             "', Blockly." + language + ".ORDER_ATOMIC);");

@@ -36,6 +36,7 @@ app.use(session({
 }));
 
 app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 
 //console.log('__dirname : ');
 //using google-blockl
@@ -52,12 +53,19 @@ app.use('/blockfactory', blockfactory);
 
 //임시로 이렇게 둠 나중에 라우터에다 메인페이지 만들어서 두어야함
 app.get('/', function(req, res){
-  res.render('mainpage',{'session': req.session});
+  if (req.session.email) {
+    console.log("logined");
+    res.send("<script> location.href='/project/list'; </script>")
+  }
+  else {
+    console.log("notlogined");
+    res.render('index.html',{'session': req.session});
+
+  }
 });
 
-app.get('/test/blockly', function(req, res){
-  //res.render(workspace,{'xml_text':});
-
+app.get('/projects', function(req ,res){
+  res.render('projects.html');
 });
 
 app.get('*', function(req, res){

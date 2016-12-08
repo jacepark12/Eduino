@@ -1,0 +1,76 @@
+<!DOCTYPE HMTL>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/projects.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <img src="/img/logo/eduino.png" height="20px">
+
+        <ul>
+          <li class="activated"> PROJECTS </li>
+          <li> BLOCK STORE </li>
+        </ul>
+      </nav>
+
+      <div class="header-container">
+        <h1> <b><%=name%></b>님의 Eduino Studio </h1>
+      </div>
+    </header>
+
+    <main>
+
+      <nav>
+
+        <ul>
+          <li class="activated"> 전체 </li>
+          <li> 아두이노 </li>
+          <li> 자바스크립트 </li>
+          <li> 파이썬 </li>
+        </ul>
+
+      </nav>
+
+      <div class="project-container">
+        <a href="/project/add">
+
+          <div class="card create-project">
+
+            <div class="text">
+              <i class="fa fa-plus-square-o fa-4x" aria-hidden="true"></i>
+              <h3> 프로젝트 추가하기 </h3>
+            </div>
+
+          </div>
+
+        </a>
+        <% for(var i in projectArray){ %>
+        <a href="./workspace/<%=projectArray[i].projectname%>">
+          <div class="project card">
+
+            <div class="gradient"> </div>
+
+            <div class="info">
+              <h3> <%= projectArray[i].projectname%> </h3>
+
+              <p> <%=projectArray[i].description%> </p>
+            </div>
+
+          </div>
+        </a>
+        <%}%>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>

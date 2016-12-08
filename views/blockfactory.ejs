@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="target-densitydpi=device-dpi, height=660, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Blockly Demo: Block Factory</title>
-  <script src="/storage.js"></script>
+  <script src="/js/storage.js"></script>
   <script src="/js/factory.js"></script>
   <script src="/js/blockly_compressed.js"></script>
   <script src="/js/msg/messages.js"></script>
@@ -21,6 +21,11 @@
       <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
         <a href="../index.html">Demos</a> &gt; Block Factory</h1>
     </td>
+    <select id="variables">
+      <option value="null">NULL</option>
+    </select>
+    <button onclick="insert_var()">Insert</button>
+    <textarea id="codeEdit"></textarea>
     <td width="50%" height="5%">
       <table>
         <tr>
