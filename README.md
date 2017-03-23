@@ -3,7 +3,7 @@ Eduino - The Online Web Arduino IDE
 
 ###Welcome to Eduino
 
-![Eduino](,/public/img/screenshot1.png)
+![Eduino](./public/img/screenshot1.png)
 
 Eduino is a web based Arduino IDE.
 
