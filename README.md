@@ -1,7 +1,7 @@
 # Eduino
 Eduino - The Online Web Arduino IDE
 
-###Welcome to Eduino
+### Welcome to Eduino
 
 ![Eduino](./public/img/screenshot1.png)
 
@@ -15,7 +15,7 @@ There are two editors in Eduino
 
 * Code editors
 
-###Features 
+### Features 
 
 > DONE 
 
@@ -31,7 +31,7 @@ There are two editors in Eduino
 
 * Sensor Data Saving & Analyzing
 
-###Developers And Contributors
+### Developers And Contributors
 
 * ParkJaesung
  * Korea Digital Media High School
