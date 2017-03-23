@@ -521,14 +521,7 @@ Features-stack
   z-index: 3; }
   .features-extra .btn {
     margin-top: 20px; }
-  .features-extra .macbook-wrap {
-    position: absolute;
-    width: 916px;
-    height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
-    top: 114px;
-    z-index: 4;
-    left: 50%; }
+
 
 /* ==========================================================================
 .hero-strip
