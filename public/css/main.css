@@ -1,3 +1,132 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  font-family:'Spoqa Han Sans','Sans-serif';
+}
+
+div.table-wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+div.table-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 html, body {
   margin: 0;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  padding: 10px 150px;
+  width: 100%;
+  color: white;
+}
+
+  nav .logo {
+    margin-right: 100px;
+  }
+
+    nav .logo img {
+      height: 25px;
+      margin-top: 8px;
+      float: left;
+    }
+
+  nav ul {
+    list-style: none;
+    float: left;
+  }
+
+    nav ul li {
+      display: inline-block;
+      float: left;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, .5);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #FF5D68;
+    }
+
+    nav ul.menu li:not(.logo) {
+      margin-top: 13px;
+      margin-right: 25px;
+    }
+
+  nav ul.member-action {
+    float: right;
+    height: 30px;
+  }
+
+    nav ul.member-action button {
+      background-color: transparent;
+      border: 1px solid #FF5D68;
+      border-radius: 2px;
+      padding: 0 15px;
+      height: 41px;
+      margin-left: 15px;
+      font-weight: 300;
+      font-size: 9pt;
+      color: #FF5D68;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav ul.member-action button:hover {
+      background-color: #FF5D68;
+      color: white;
+    }
+
+header {
+  height: 100%;
+  background-image: url('../img/sign_form_background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+  header h1 {
+    margin: 0;
+    font-size: 50pt;
+    font-weight: 500;
+    color: white;
+  }
+
+  header p {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 140%;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  header .btn-container {
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+  }
+
+    header .btn-container button {
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 100px;
+      padding: 20px 100px;
+      font-size: 13pt;
+      color: #FF5D68;
+    }
+
+section.green {
+  background: #67B26F;
+  background: -webkit-linear-gradient(#4ca2cd, #67B26F);
+  background: linear-gradient(#4ca2cd, #67B26F);
 }

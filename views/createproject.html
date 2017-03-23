@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/css/sign.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="signin">
+    <div class="wrapper">
+        <main>
+            <div class="main-container">
+                <div class="logo-container">
+                    <img src="/img/logo/eduino.png">
+                </div>
+
+                <nav>
+                    <button id="jsTab" class="tab activated"> Javascript</button>
+                    <button id="arduinoTab" class="tab"> Arduino</button>
+                </nav>
+
+                <div class="form-container">
+
+                    <div class="signin-form">
+                        <form action="/project/add" method="POST">
+                            <legend> Name</legend>
+                            <input type="text" name="name" placeholder="Name">
+                            <legend> Description</legend>
+                            <input type="text" name="description" placeholder="Description">
+                            <button type="submit"> 생성하기</button>
+                        </form>
+
+                        <div class="divider"></div>
+
+                        <div class="forgot">
+                            <a href="https://www.seoulmetro.co.kr/metro/lost/list.action?mCode=A040010000"> 도움이 필요하신가요? </a>
+                        </div>
+                    </div>
+
+                    <div class="signup-form">
+                        <form action="/user/signup" method="POST">
+                            <legend> NAME</legend>
+                            <input type="text" name="name">
+                            <legend> EMAIL</legend>
+                            <input type="email" name="email">
+                            <legend> PASSWORD</legend>
+                            <input type="password" name="password">
+                            <button type="submit"> 회원가입</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        var duration = 500,
+                easing = "easeInOutCirc";
+
+        function moveForm(d) {
+            $(".form-container").clearQueue();
+            if (d) {
+                $('.form-container').animate({
+                    left: 0
+                }, duration, easing);
+            } else {
+                $('.form-container').animate({
+                    left: -400
+                }, duration, easing);
+            }
+        }
+
+        $("#jsTab").click(function () {
+            moveForm(true);
+            $(this).addClass('activated');
+            $("#signupTab").removeClass('activated');
+        });
+
+        $("#arduinoTab").click(function () {
+            /*
+            moveForm(false);
+            $(this).addClass('activated');
+            $("#signinTab").removeClass('activated');*/
+
+            //developing arduino Project
+            alert('Coming Soon!');
+        });
+    });
+</script>
+</html>

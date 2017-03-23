@@ -103,7 +103,7 @@ function insert_var(){
   var codeEdit = document.getElementById('codeEdit');
   var variables = document.getElementById('variables');
 
-  codeEdit.textContent += '\n' + variables.value;
+  addString('\n' + variables.value);
 }
 
 /**

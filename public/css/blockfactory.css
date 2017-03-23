@@ -75,3 +75,6 @@ button:hover:not(:disabled)>* {
 #linkButton {
     display: none;
 }
+#languagePre{
+    display: none;
+}

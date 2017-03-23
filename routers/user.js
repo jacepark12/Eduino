@@ -28,10 +28,8 @@ user.get("/", function(req, res){
 //이부분 뭔 기능인지 잘 모르겠다_동우, 알아내었다.
 user.get("/signup", function(req, res){
   if (req.param('step') == 'terms') {
-    //res.sendfile('../public/signup.html');
     res.sendfile(path.resolve(__dirname+'/../public/signup.html'));
   } else if (req.param('step') == 'form') {
-    //res.sendfile('../public/signup_form.html');
     res.sendfile(path.resolve(__dirname+'/../public/signup_form.html'));
   } else {
     res.send("<script> location.href = '/user/signup?step=terms' </script>");

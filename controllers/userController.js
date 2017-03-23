@@ -59,7 +59,7 @@ module.exports = {
 
           user.save(function (err, user) {
             //res.send(user);
-            res.send("<script> alert('가입되었습니다.'); location.href='http://localhost:3005'; </script>")
+            res.send("<script> alert('가입되었습니다.'); location.href='http://" + _base_url + "';</script>");
           });
         }
       });
@@ -73,7 +73,7 @@ module.exports = {
 
     req.session.destroy();
     res.clearCookie('sid');
-    res.send("<script> location.href='http://localhost:3005' </script>")
+    res.send("<script> location.href=" + _base_url + "</script>")
   },
 
   myPage : function(req, res){

@@ -27,6 +27,7 @@
         <div class="sidebar-content">
           <ul class="list-unstyled">
             <li><a href="#" class="actived"><i class="fa fa-list"></i> Projects</a></li>
+            <li><a href="#"><i class="fa fa-line-chart"></i> Block Factorys</a></li>
             <li><a href="#"><i class="fa fa-line-chart"></i> Block Store</a></li>
             <li><a href="#"><i class="fa fa-comments-o"></i> 오류 신고 & 피드백</a></li>
           </ul>
@@ -68,10 +69,11 @@
         <% for(var i in projectArray){ %>
         <a href="./workspace/<%=projectArray[i].projectname%>">
           <div class="project card">
-
+            <img src="../img/project-icon1.jpg">
             <div class="gradient"> </div>
 
-            <div class="info">
+            <div class="info" >
+
               <h3> <%= projectArray[i].projectname%> </h3>
 
               <p> <%=projectArray[i].description%> </p>

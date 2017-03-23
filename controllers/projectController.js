@@ -31,7 +31,7 @@ module.exports = {
         description: req.body.description,
         projectname: req.body.name,
         xml: '<xml xmlns="http://www.w3.org/1999/xhtml"></xml>' // default project_xml
-      }
+      };
 
       model.findOne({'owner': email, 'projectname':req.body.name }, function(err, user) {
         if(err){
@@ -48,7 +48,7 @@ module.exports = {
           //TODO Fixed null err
           project.save(function (err, user) {
             //res.send(user);
-            res.send("<script> alert('생성되었습니다.'); location.href='http://localhost:3005'; </script>")
+            res.send("<script> alert('생성되었습니다.'); location.href='http://" + _base_url + "'; </script>");
           });
         }
       });
@@ -101,4 +101,4 @@ module.exports = {
     });
   }
 
-}
+};

@@ -4,6 +4,8 @@ var path = require('path');
 var app = express();
 
 var ejs = require('ejs');
+var config = require('./config')['development'];
+global._base_url = config.BASE_URL;
 
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
@@ -13,7 +15,7 @@ var users = require('./routers/user.js');
 var projects = require('./routers/project.js');
 var blockfactory = require('./routers/blockfactory.js');
 
-mongoose.connect('mongodb://serverone1741.cloudapp.net:27017/eduino');
+mongoose.connect(config.MONGODB_URL);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -68,10 +70,11 @@ app.get('/projects', function(req ,res){
   res.render('projects.html');
 });
 
+
 app.get('*', function(req, res){
   res.status(404).send("Not Found<br>경로를 다시 한번 확인해주세요");
-})
+});
 
-var server = app.listen(3005, function() {
+var server = app.listen(3030, function() {
   console.log("Eduino Web Server");
 });

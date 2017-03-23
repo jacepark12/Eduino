@@ -58,9 +58,34 @@
     background-color: #00ABA9;
 }
 
-/*
-TODO CSS 분리
-*/
 .navbar-default .navbar-nav > li > a.btn-primary-outline {
     color: #FFFFFf;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #ffffff;
+    border-color: #399ce0;
+}
+.btn-primary-outline {
+    background-color: transparent;
+    border: 1px solid #00ABA9;
+    color: #ffffff;
+}
+.btn-primary-outline.active,
+.btn-primary-outline.focus,
+.btn-primary-outline:active,
+.btn-primary-outline:focus,
+.btn-primary-outline:hover,
+.open > .dropdown-toggle.btn-primary-outline {
+    background-color: #edf2fd;
+    color: #43aaf1;
 }
