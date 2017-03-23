@@ -3,6 +3,8 @@ Eduino - The Online Web Arduino IDE
 
 ###Welcome to Eduino
 
+![Eduino](,/public/img/screenshot1.png)
+
 Eduino is a web based Arduino IDE.
 
 Eudino is based on google-blockly(https://github.com/google/blockly) open source.
